@@ -1,0 +1,11 @@
+<!-- @dsCard group="Forms" height=110 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'grid max-w-sm gap-inset-xs'}, h(Label,{htmlFor:'c',className:'text-micro uppercase text-ink-eyebrow'},'Company'), h(Input,{id:'c',placeholder:'Organization name'})))
+  }
+})()
+</script>

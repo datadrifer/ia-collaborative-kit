@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>Dialog</title>
+</head>
+<body>
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(Dialog,{defaultOpen:true}, h(DialogTrigger,{className:buttonVariants({variant:'outline'})},'Start a conversation'), h(DialogContent,null, h(DialogHeader,null, h(DialogTitle,null,'Start a conversation with IA'), h(DialogDescription,null,"Tell us about your challenge and we'll get back to you.")), h(DialogFooter,null, h(DialogClose,{className:buttonVariants({variant:'outline'})},'Cancel'), h(Button,null,"Let's talk")))))
+  }
+})()
+</script>
+
+</body>
+</html>

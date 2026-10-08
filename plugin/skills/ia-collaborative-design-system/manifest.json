@@ -1,0 +1,786 @@
+{
+  "$format": "substrate.handoff/1",
+  "assets": [
+    {
+      "alt": "Brand logo (ia-logo)",
+      "bytes": 5619,
+      "file": "assets/ia-logo.svg",
+      "id": "ia-logo",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "logo",
+      "rules": [
+        "The brand logo: keep its proportions; never recolour, stretch, rotate or redraw it.",
+        "Give it clear space at least the height of its own cap letters, on a plain ground.",
+        "Black on white or IA's light greys only; on IA blue, black or a photo use ia-logo-white.",
+        "Keep clear space of at least the monogram's height on every side.",
+        "Never recolour it blue, stretch it, outline it or set the wordmark in another face.",
+        "Smallest size: 24px tall on screen, 8mm in print."
+      ],
+      "sha256": "a50ea9e7873813974858e91977e0f630b78406530a13ed0b264278be7260dc97",
+      "source": "site"
+    },
+    {
+      "alt": "Brand logo (ia-logo-white)",
+      "bytes": 5662,
+      "file": "assets/ia-logo-white.svg",
+      "id": "ia-logo-white",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "logo",
+      "rules": [
+        "The brand logo: keep its proportions; never recolour, stretch, rotate or redraw it.",
+        "Give it clear space at least the height of its own cap letters, on a plain ground.",
+        "Use only on IA blue, black or a dark photo where the white reads at 4.5:1 or better.",
+        "Same clear space and minimum size as ia-logo."
+      ],
+      "sha256": "ed664f4b975d3808608dfcb585c73d76688180a7af257bea412215b07176dbd7",
+      "source": "site"
+    },
+    {
+      "alt": "IA monogram: a slanted IA cut out of a black circle",
+      "bytes": 544,
+      "file": "assets/ia-monogram.svg",
+      "id": "ia-monogram",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "mark",
+      "rules": [
+        "Use where the full lockup does not fit, or beside text that already says IA Collaborative.",
+        "Black on light grounds; ia-monogram-white on dark or blue.",
+        "Smallest size: 16px."
+      ],
+      "sha256": "e9c04ae48e4aa7cd4ef56a943fc77c9344ab729039a28a831c262b7d54ed7301",
+      "source": "site"
+    },
+    {
+      "alt": "IA monogram reversed in white",
+      "bytes": 555,
+      "file": "assets/ia-monogram-white.svg",
+      "id": "ia-monogram-white",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "mark",
+      "rules": [
+        "Only on IA blue, black or a dark photo.",
+        "Smallest size: 16px."
+      ],
+      "sha256": "c8647aec9b11077cf8abdecfabec05880d7bbe65e0dec34b08dfb352a49f9e46",
+      "source": "site"
+    },
+    {
+      "alt": "IA's six-spoke asterisk in IA blue",
+      "bytes": 395,
+      "file": "assets/ia-asterisk.svg",
+      "id": "ia-asterisk",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "mark",
+      "rules": [
+        "One asterisk per page, slide or panel: it marks the single statement that matters.",
+        "IA blue only, on white or IA's light grey. Never on the blue panel, never recoloured.",
+        "Sizes: cap height of the heading it marks, or 60 to 80px as a corner mark on a panel.",
+        "Never as a bullet, a list marker, a pattern or a background."
+      ],
+      "sha256": "da9a77fec9730f0544eb8bb9a7e19b4534824e90eb04ab242445616172c34f1d",
+      "source": "site"
+    },
+    {
+      "alt": "Insight to Action, IA's brand line, as lettering",
+      "bytes": 4591,
+      "file": "assets/ia-insight-to-action.svg",
+      "id": "ia-insight-to-action",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "mark",
+      "rules": [
+        "Over photography or film, full width of the frame, white.",
+        "Once, at the top of a page or as a deck's opening slide. Never in body copy.",
+        "Do not retype it; place this file."
+      ],
+      "sha256": "65e51d4b66a0f55b6a7935021ad3b2389ef9f04c546eb62a5744e66ec8902e65",
+      "source": "site"
+    },
+    {
+      "alt": "Insight to Action lettering in black",
+      "bytes": 4599,
+      "file": "assets/ia-insight-to-action-black.svg",
+      "id": "ia-insight-to-action-black",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/svg+xml",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "mark",
+      "rules": [
+        "On white or IA's lightest grey only, full measure, once per piece."
+      ],
+      "sha256": "f32a88c3d7838ed5cc47753d7511b0f766332dd322c8e3abdb2db61f4a9800be",
+      "source": "site"
+    },
+    {
+      "alt": "Soft blurred field of IA blue rising from the lower left into white",
+      "bytes": 100493,
+      "file": "assets/ia-blue-field-2.jpg",
+      "id": "ia-blue-field-2",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "texture",
+      "rules": [
+        "Once per page or deck section, as a full-bleed ground for one panel.",
+        "Set text on the white side only; keep the blue mass clear.",
+        "Never tint, crop to the blue only, or put it behind body copy."
+      ],
+      "sha256": "26ac41baac606c4c010814511dfb29f6f1389049aa0a86a625a212be24d18afb",
+      "source": "site"
+    },
+    {
+      "alt": "Soft blurred field of IA blue low in a white frame",
+      "bytes": 341490,
+      "file": "assets/chatbg.png",
+      "id": "chatbg",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/png",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "texture",
+      "rules": [
+        "Once per page, as the ground of one panel (cover, the blue mass low and off an edge).",
+        "Text sits on the white side only; never behind running copy.",
+        "Never tiled, tinted or cropped to the blue."
+      ],
+      "sha256": "d88ca70ca7a6c8d20d7ed8a2101b2836dff3db34de31fe7cdd3760d97c6d6db9",
+      "source": "site"
+    },
+    {
+      "alt": "IA's Chicago studio, open plan: white walls, timber floor, people at a standing table under the IA monogram.",
+      "bytes": 316767,
+      "file": "assets/ia-studio-open-plan.jpg",
+      "id": "ia-studio-open-plan",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+      ],
+      "sha256": "0ddd1d819e8674c9eb2a600a2a833cb5ee834e46256188fa7e1eecdcafdb6d3e",
+      "source": "site"
+    },
+    {
+      "alt": "IA's team working together at a long table by tall studio windows.",
+      "bytes": 455456,
+      "file": "assets/ia-studio-team-at-work.jpg",
+      "id": "ia-studio-team-at-work",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+      ],
+      "sha256": "81b04d322ac368c03f2e2e9e22f416183aeadc579b86086fbb67c0977f7e9775",
+      "source": "site"
+    },
+    {
+      "alt": "IA's studio through a glass wall: a project room with prototypes and sticky notes beyond.",
+      "bytes": 421647,
+      "file": "assets/ia-studio-glass-room.jpg",
+      "id": "ia-studio-glass-room",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+      ],
+      "sha256": "98585cbde0c22c13236bda45f95d22727aeb490b3feafeb68bb83b50143eac9a",
+      "source": "site"
+    },
+    {
+      "alt": "IA's model shop: a bandsaw and workbenches, a designer walking through.",
+      "bytes": 431720,
+      "file": "assets/ia-studio-model-shop.jpg",
+      "id": "ia-studio-model-shop",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+      ],
+      "sha256": "fce50a2a05c18433931e60b173d57f4b184d9131b082d4374c97d6adcc576ebc",
+      "source": "site"
+    },
+    {
+      "alt": "IA's team at a synthesis wall of sticky notes and printed research, mid-conversation.",
+      "bytes": 93099,
+      "file": "assets/ia-work-synthesis-wall.jpg",
+      "id": "ia-work-synthesis-wall",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "1384–1920px wide web copies: right for a page or half a slide; ask IA for the originals before full-bleed print."
+      ],
+      "sha256": "8377deaa0ea4e8f4f06d747738cc2dbf7ab77e4bff1c637f27b7036d2343ace9",
+      "source": "site"
+    },
+    {
+      "alt": "Two IA designers working side by side over a table, close up.",
+      "bytes": 193584,
+      "file": "assets/ia-work-side-by-side.jpg",
+      "id": "ia-work-side-by-side",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "1384–1920px wide web copies: right for a page or half a slide; ask IA for the originals before full-bleed print."
+      ],
+      "sha256": "f095de0e6a477b6d613debcafc260fbd1a6cd31c4f7c7adfedac2603bab9fb94",
+      "source": "site"
+    },
+    {
+      "alt": "An IA team reviewing research on a wall of notes around a table.",
+      "bytes": 157115,
+      "file": "assets/ia-work-research-review.jpg",
+      "id": "ia-work-research-review",
+      "licence": "The brand's own — it owns this file",
+      "mime": "image/jpeg",
+      "origin": "rendered",
+      "redistributable": true,
+      "role": "image",
+      "rules": [
+        "Untinted and unfiltered; never a blue overlay or duotone.",
+        "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+        "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+        "1384–1920px wide web copies: right for a page or half a slide; ask IA for the originals before full-bleed print."
+      ],
+      "sha256": "72807d63756ebef8c13819abe89118f52f0198fef2765a0d2697ebdc1c2b6a94",
+      "source": "site"
+    }
+  ],
+  "files": {
+    "LICENSES.md": {
+      "bytes": 1986,
+      "sha256": "3ce6a4b36cd78717fc04ae7b7795c6ff0a69ad76c230529a6af9a4386a497aaa"
+    },
+    "SKILL.md": {
+      "bytes": 43684,
+      "sha256": "7cdb0ff055d7ff8259263836351bae506d6410087cabbbe19ace86d77f71c3a6"
+    },
+    "assets/chatbg.png": {
+      "bytes": 341490,
+      "sha256": "d88ca70ca7a6c8d20d7ed8a2101b2836dff3db34de31fe7cdd3760d97c6d6db9"
+    },
+    "assets/ia-asterisk.svg": {
+      "bytes": 395,
+      "sha256": "da9a77fec9730f0544eb8bb9a7e19b4534824e90eb04ab242445616172c34f1d"
+    },
+    "assets/ia-blue-field-2.jpg": {
+      "bytes": 100493,
+      "sha256": "26ac41baac606c4c010814511dfb29f6f1389049aa0a86a625a212be24d18afb"
+    },
+    "assets/ia-insight-to-action-black.svg": {
+      "bytes": 4599,
+      "sha256": "f32a88c3d7838ed5cc47753d7511b0f766332dd322c8e3abdb2db61f4a9800be"
+    },
+    "assets/ia-insight-to-action.svg": {
+      "bytes": 4591,
+      "sha256": "65e51d4b66a0f55b6a7935021ad3b2389ef9f04c546eb62a5744e66ec8902e65"
+    },
+    "assets/ia-logo-white.svg": {
+      "bytes": 5662,
+      "sha256": "ed664f4b975d3808608dfcb585c73d76688180a7af257bea412215b07176dbd7"
+    },
+    "assets/ia-logo.svg": {
+      "bytes": 5619,
+      "sha256": "a50ea9e7873813974858e91977e0f630b78406530a13ed0b264278be7260dc97"
+    },
+    "assets/ia-monogram-white.svg": {
+      "bytes": 555,
+      "sha256": "c8647aec9b11077cf8abdecfabec05880d7bbe65e0dec34b08dfb352a49f9e46"
+    },
+    "assets/ia-monogram.svg": {
+      "bytes": 544,
+      "sha256": "e9c04ae48e4aa7cd4ef56a943fc77c9344ab729039a28a831c262b7d54ed7301"
+    },
+    "assets/ia-studio-glass-room.jpg": {
+      "bytes": 421647,
+      "sha256": "98585cbde0c22c13236bda45f95d22727aeb490b3feafeb68bb83b50143eac9a"
+    },
+    "assets/ia-studio-model-shop.jpg": {
+      "bytes": 431720,
+      "sha256": "fce50a2a05c18433931e60b173d57f4b184d9131b082d4374c97d6adcc576ebc"
+    },
+    "assets/ia-studio-open-plan.jpg": {
+      "bytes": 316767,
+      "sha256": "0ddd1d819e8674c9eb2a600a2a833cb5ee834e46256188fa7e1eecdcafdb6d3e"
+    },
+    "assets/ia-studio-team-at-work.jpg": {
+      "bytes": 455456,
+      "sha256": "81b04d322ac368c03f2e2e9e22f416183aeadc579b86086fbb67c0977f7e9775"
+    },
+    "assets/ia-work-research-review.jpg": {
+      "bytes": 157115,
+      "sha256": "72807d63756ebef8c13819abe89118f52f0198fef2765a0d2697ebdc1c2b6a94"
+    },
+    "assets/ia-work-side-by-side.jpg": {
+      "bytes": 193584,
+      "sha256": "f095de0e6a477b6d613debcafc260fbd1a6cd31c4f7c7adfedac2603bab9fb94"
+    },
+    "assets/ia-work-synthesis-wall.jpg": {
+      "bytes": 93099,
+      "sha256": "8377deaa0ea4e8f4f06d747738cc2dbf7ab77e4bff1c637f27b7036d2343ace9"
+    },
+    "brief.json": {
+      "bytes": 32926,
+      "sha256": "fa956608fa693cb18e0d0873c21b96a75523def7c0d4949db35651ea5fa7a607"
+    },
+    "gate/bans.json": {
+      "bytes": 2137,
+      "sha256": "6bfb0442cdb7b8cf2ffc2132c2cdc6450a9324fb38fb354d52e9df36af7eaa77"
+    },
+    "gate/check.mjs": {
+      "bytes": 10119,
+      "sha256": "c4b765771b33d87ed40c659c414d86b78067f39f9b65ffbe9cc8105b4d7c1092"
+    },
+    "gate/codex-hook.mjs": {
+      "bytes": 4735,
+      "sha256": "176481403c68567adec45540e6758fe32dad160db07aaa205094f8137af836eb"
+    },
+    "gate/enable-hook.mjs": {
+      "bytes": 9378,
+      "sha256": "6decca4425d7ed07af6d91a3852f221aca680778e929e2ea4c3e8832177c6122"
+    },
+    "gate/handoff.mjs": {
+      "bytes": 14285,
+      "sha256": "c131d32bdbb7b9d3bfbf2215352b35a8ac66a52f6190e6cb37678ccdebe2c3ac"
+    },
+    "gate/hook.mjs": {
+      "bytes": 16060,
+      "sha256": "7afaf6f0f98821d236b801ed4ec756202c0855323e031b3938ac3f9183e4ed76"
+    },
+    "gate/index.mjs": {
+      "bytes": 19061,
+      "sha256": "b7041fe0eb210e7e401d72845e88c73cc225f17a189f23798fd9d8bea2695748"
+    },
+    "gate/rewrite.mjs": {
+      "bytes": 11097,
+      "sha256": "e0b43586ac7adc9bb82dfce05da23e413ace41b9388024323f7189b217b3e41b"
+    },
+    "recipes.css": {
+      "bytes": 16065,
+      "sha256": "122df70de0589209626349759eb647a2a9084d460f4de7539235c0e10d50a1c0"
+    },
+    "recipes/asterisk-heading.html": {
+      "bytes": 201,
+      "sha256": "504ccfacf021c8ec5365c8d5f90a4174892bacc67bf963e33b263e4728e3910c"
+    },
+    "recipes/chat-panel.html": {
+      "bytes": 552,
+      "sha256": "497b6eea7d04abc6b93d5a318c97e739131f53125bbacce7b6d22515b934b7d2"
+    },
+    "recipes/chevron-link.html": {
+      "bytes": 107,
+      "sha256": "1ff4897a1a93fc042571b7df34956bb776a087f46f04b29e5eb7b0fce944b517"
+    },
+    "recipes/circle-button.html": {
+      "bytes": 87,
+      "sha256": "2326fb22a891b353a2f40867fd0ff31a0a2c995c387343102bbd01548c40d0c6"
+    },
+    "recipes/closing-action.html": {
+      "bytes": 87,
+      "sha256": "fad4a9d75444183da47c049e9c961e4af6ed82472b0d2135729fa44f8b1062c5"
+    },
+    "recipes/framework-table.html": {
+      "bytes": 817,
+      "sha256": "732f594206da7ee5d49e307923f6d7f3363fde75955d3438d842181dc6fcfec4"
+    },
+    "recipes/image-card.html": {
+      "bytes": 233,
+      "sha256": "dfb3eeb39594cc40e3edd5d657df96bfd0e3f764b490695bda759586c5026745"
+    },
+    "recipes/pill-action.html": {
+      "bytes": 81,
+      "sha256": "4241d64a92ed9cc731c6da7e3a1a227431b1c8d77a3af8a86789bfc76ca00842"
+    },
+    "recipes/service-list.html": {
+      "bytes": 1021,
+      "sha256": "48c30c441589483bcb399880898bf66d515947f506715e0daa70d846393b5da1"
+    },
+    "recipes/site-footer.html": {
+      "bytes": 272,
+      "sha256": "cfe7579d5f1e4877e560486b028f10b32dd2ce01d2f686eacae02e2cd347df16"
+    },
+    "recipes/statement-panel.html": {
+      "bytes": 1280,
+      "sha256": "4fc2709a67e84c18244b2a2a9ab560aa39436f49f081b09cd62e2e7d0e86793a"
+    },
+    "recipes/talk-panel.html": {
+      "bytes": 256,
+      "sha256": "4edb2f2c0f83d6efb42c6a2c791da174fa96ec99861711b7b5a79aa767cf13d5"
+    },
+    "recipes/we-statement.html": {
+      "bytes": 460,
+      "sha256": "6b6e6dd52afcaca4904a6d082af24f270b4e56694344b447b907195e3c511b04"
+    },
+    "substrate.bundle.json": {
+      "bytes": 206390,
+      "sha256": "ea9bed5eb496dcd8fb7121cf88945e3d395ab2c61b507fef66b690b2349b4420"
+    },
+    "substrate.css": {
+      "bytes": 28767,
+      "sha256": "24f511fbf5ec0f8b07442bbba68cf742710d7e85d2a31b205eed308131e58d4b"
+    }
+  },
+  "identity": {
+    "assets": [
+      {
+        "alt": "Soft blurred field of IA blue low in a white frame",
+        "bytes": 341490,
+        "file": "assets/chatbg.png",
+        "id": "chatbg",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/png",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "texture",
+        "rules": [
+          "Once per page, as the ground of one panel (cover, the blue mass low and off an edge).",
+          "Text sits on the white side only; never behind running copy.",
+          "Never tiled, tinted or cropped to the blue."
+        ],
+        "sha256": "d88ca70ca7a6c8d20d7ed8a2101b2836dff3db34de31fe7cdd3760d97c6d6db9",
+        "source": "site"
+      },
+      {
+        "alt": "IA's six-spoke asterisk in IA blue",
+        "bytes": 395,
+        "file": "assets/ia-asterisk.svg",
+        "id": "ia-asterisk",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "mark",
+        "rules": [
+          "One asterisk per page, slide or panel: it marks the single statement that matters.",
+          "IA blue only, on white or IA's light grey. Never on the blue panel, never recoloured.",
+          "Sizes: cap height of the heading it marks, or 60 to 80px as a corner mark on a panel.",
+          "Never as a bullet, a list marker, a pattern or a background."
+        ],
+        "sha256": "da9a77fec9730f0544eb8bb9a7e19b4534824e90eb04ab242445616172c34f1d",
+        "source": "site"
+      },
+      {
+        "alt": "Soft blurred field of IA blue rising from the lower left into white",
+        "bytes": 100493,
+        "file": "assets/ia-blue-field-2.jpg",
+        "id": "ia-blue-field-2",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "texture",
+        "rules": [
+          "Once per page or deck section, as a full-bleed ground for one panel.",
+          "Set text on the white side only; keep the blue mass clear.",
+          "Never tint, crop to the blue only, or put it behind body copy."
+        ],
+        "sha256": "26ac41baac606c4c010814511dfb29f6f1389049aa0a86a625a212be24d18afb",
+        "source": "site"
+      },
+      {
+        "alt": "Insight to Action lettering in black",
+        "bytes": 4599,
+        "file": "assets/ia-insight-to-action-black.svg",
+        "id": "ia-insight-to-action-black",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "mark",
+        "rules": [
+          "On white or IA's lightest grey only, full measure, once per piece."
+        ],
+        "sha256": "f32a88c3d7838ed5cc47753d7511b0f766332dd322c8e3abdb2db61f4a9800be",
+        "source": "site"
+      },
+      {
+        "alt": "Insight to Action, IA's brand line, as lettering",
+        "bytes": 4591,
+        "file": "assets/ia-insight-to-action.svg",
+        "id": "ia-insight-to-action",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "mark",
+        "rules": [
+          "Over photography or film, full width of the frame, white.",
+          "Once, at the top of a page or as a deck's opening slide. Never in body copy.",
+          "Do not retype it; place this file."
+        ],
+        "sha256": "65e51d4b66a0f55b6a7935021ad3b2389ef9f04c546eb62a5744e66ec8902e65",
+        "source": "site"
+      },
+      {
+        "alt": "Brand logo (ia-logo-white)",
+        "bytes": 5662,
+        "file": "assets/ia-logo-white.svg",
+        "id": "ia-logo-white",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "logo",
+        "rules": [
+          "The brand logo: keep its proportions; never recolour, stretch, rotate or redraw it.",
+          "Give it clear space at least the height of its own cap letters, on a plain ground.",
+          "Use only on IA blue, black or a dark photo where the white reads at 4.5:1 or better.",
+          "Same clear space and minimum size as ia-logo."
+        ],
+        "sha256": "ed664f4b975d3808608dfcb585c73d76688180a7af257bea412215b07176dbd7",
+        "source": "site"
+      },
+      {
+        "alt": "Brand logo (ia-logo)",
+        "bytes": 5619,
+        "file": "assets/ia-logo.svg",
+        "id": "ia-logo",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "logo",
+        "rules": [
+          "The brand logo: keep its proportions; never recolour, stretch, rotate or redraw it.",
+          "Give it clear space at least the height of its own cap letters, on a plain ground.",
+          "Black on white or IA's light greys only; on IA blue, black or a photo use ia-logo-white.",
+          "Keep clear space of at least the monogram's height on every side.",
+          "Never recolour it blue, stretch it, outline it or set the wordmark in another face.",
+          "Smallest size: 24px tall on screen, 8mm in print."
+        ],
+        "sha256": "a50ea9e7873813974858e91977e0f630b78406530a13ed0b264278be7260dc97",
+        "source": "site"
+      },
+      {
+        "alt": "IA monogram reversed in white",
+        "bytes": 555,
+        "file": "assets/ia-monogram-white.svg",
+        "id": "ia-monogram-white",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "mark",
+        "rules": [
+          "Only on IA blue, black or a dark photo.",
+          "Smallest size: 16px."
+        ],
+        "sha256": "c8647aec9b11077cf8abdecfabec05880d7bbe65e0dec34b08dfb352a49f9e46",
+        "source": "site"
+      },
+      {
+        "alt": "IA monogram: a slanted IA cut out of a black circle",
+        "bytes": 544,
+        "file": "assets/ia-monogram.svg",
+        "id": "ia-monogram",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/svg+xml",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "mark",
+        "rules": [
+          "Use where the full lockup does not fit, or beside text that already says IA Collaborative.",
+          "Black on light grounds; ia-monogram-white on dark or blue.",
+          "Smallest size: 16px."
+        ],
+        "sha256": "e9c04ae48e4aa7cd4ef56a943fc77c9344ab729039a28a831c262b7d54ed7301",
+        "source": "site"
+      },
+      {
+        "alt": "IA's studio through a glass wall: a project room with prototypes and sticky notes beyond.",
+        "bytes": 421647,
+        "file": "assets/ia-studio-glass-room.jpg",
+        "id": "ia-studio-glass-room",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+        ],
+        "sha256": "98585cbde0c22c13236bda45f95d22727aeb490b3feafeb68bb83b50143eac9a",
+        "source": "site"
+      },
+      {
+        "alt": "IA's model shop: a bandsaw and workbenches, a designer walking through.",
+        "bytes": 431720,
+        "file": "assets/ia-studio-model-shop.jpg",
+        "id": "ia-studio-model-shop",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+        ],
+        "sha256": "fce50a2a05c18433931e60b173d57f4b184d9131b082d4374c97d6adcc576ebc",
+        "source": "site"
+      },
+      {
+        "alt": "IA's Chicago studio, open plan: white walls, timber floor, people at a standing table under the IA monogram.",
+        "bytes": 316767,
+        "file": "assets/ia-studio-open-plan.jpg",
+        "id": "ia-studio-open-plan",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+        ],
+        "sha256": "0ddd1d819e8674c9eb2a600a2a833cb5ee834e46256188fa7e1eecdcafdb6d3e",
+        "source": "site"
+      },
+      {
+        "alt": "IA's team working together at a long table by tall studio windows.",
+        "bytes": 455456,
+        "file": "assets/ia-studio-team-at-work.jpg",
+        "id": "ia-studio-team-at-work",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "2400px wide, from IA's originals: sharp enough for a full-bleed slide."
+        ],
+        "sha256": "81b04d322ac368c03f2e2e9e22f416183aeadc579b86086fbb67c0977f7e9775",
+        "source": "site"
+      },
+      {
+        "alt": "An IA team reviewing research on a wall of notes around a table.",
+        "bytes": 157115,
+        "file": "assets/ia-work-research-review.jpg",
+        "id": "ia-work-research-review",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "1384–1920px wide web copies: right for a page or half a slide; ask IA for the originals before full-bleed print."
+        ],
+        "sha256": "72807d63756ebef8c13819abe89118f52f0198fef2765a0d2697ebdc1c2b6a94",
+        "source": "site"
+      },
+      {
+        "alt": "Two IA designers working side by side over a table, close up.",
+        "bytes": 193584,
+        "file": "assets/ia-work-side-by-side.jpg",
+        "id": "ia-work-side-by-side",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "1384–1920px wide web copies: right for a page or half a slide; ask IA for the originals before full-bleed print."
+        ],
+        "sha256": "f095de0e6a477b6d613debcafc260fbd1a6cd31c4f7c7adfedac2603bab9fb94",
+        "source": "site"
+      },
+      {
+        "alt": "IA's team at a synthesis wall of sticky notes and printed research, mid-conversation.",
+        "bytes": 93099,
+        "file": "assets/ia-work-synthesis-wall.jpg",
+        "id": "ia-work-synthesis-wall",
+        "licence": "The brand's own — it owns this file",
+        "mime": "image/jpeg",
+        "origin": "rendered",
+        "redistributable": true,
+        "role": "image",
+        "rules": [
+          "Untinted and unfiltered; never a blue overlay or duotone.",
+          "Always in a --r-containers (14px) frame; full bleed only on a deck cover, a page hero or a divider.",
+          "White type over it sits on the black scrim (recipe image-card), never straight on the photo.",
+          "1384–1920px wide web copies: right for a page or half a slide; ask IA for the originals before full-bleed print."
+        ],
+        "sha256": "8377deaa0ea4e8f4f06d747738cc2dbf7ab77e4bff1c637f27b7036d2343ace9",
+        "source": "site"
+      }
+    ],
+    "brief": "fa956608fa693cb18e0d0873c21b96a75523def7c0d4949db35651ea5fa7a607",
+    "format": "substrate.handoff/1",
+    "layer": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes": "122df70de0589209626349759eb647a2a9084d460f4de7539235c0e10d50a1c0"
+  },
+  "lockedAt": "2026-10-08T04:21:22.152Z",
+  "name": "IA Collaborative",
+  "slug": "ia-collaborative-design-system",
+  "version": "1.0.0",
+  "withheld": []
+}

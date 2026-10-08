@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>Avatar</title>
+</head>
+<body>
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'flex items-center gap-inset-lg'}, h(Avatar,null, h(AvatarImage,{src:"data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032.0812%2032%22%3E%3Cpath%20d%3D%22M16.0406%200C7.17978%200%200%207.16248%200%2015.998C0%2024.8336%207.17978%2032%2016.0406%2032C24.9014%2032%2032.0812%2024.8375%2032.0812%2015.998C32.0812%207.15857%2024.8975%200%2016.0406%200ZM6.11538%2023.0587L11.6573%207.3819H15.5104L9.96842%2023.0587H6.11538ZM22.1088%2023.0587L21.0798%2020.1474H17.4114L18.4718%2017.15H20.0233L18.6054%2013.1417L15.1019%2023.0547H11.2488L16.7908%207.37799H20.4239L25.9658%2023.0547H22.1128L22.1088%2023.0587Z%22%20fill%3D%22%23000000%22%2F%3E%3C%2Fsvg%3E",alt:'IA Collaborative'}), h(AvatarFallback,null,'IA')), h(Avatar,null, h(AvatarFallback,null,'JR')), h(AvatarGroup,null, h(Avatar,null,h(AvatarFallback,null,'ML')), h(Avatar,null,h(AvatarFallback,null,'SK')), h(AvatarGroupCount,null,'+3'))))
+  }
+})()
+</script>
+
+</body>
+</html>

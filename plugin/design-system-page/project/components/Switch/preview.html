@@ -1,0 +1,11 @@
+<!-- @dsCard group="Forms" height=110 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'flex flex-col gap-inset-md'}, h('div',{className:'flex items-center gap-inset-xs'}, h(Switch,{id:'s1',defaultChecked:true}), h(Label,{htmlFor:'s1'},'Machine view')), h('div',{className:'flex items-center gap-inset-xs'}, h(Switch,{id:'s2'}), h(Label,{htmlFor:'s2'},'Reduce motion'))))
+  }
+})()
+</script>

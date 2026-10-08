@@ -1,0 +1,11 @@
+<!-- @dsCard group="Actions" height=150 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'flex flex-col gap-inset-md'}, h('div',{className:'flex flex-wrap items-center gap-inset-md'}, h(Button,null,"Let's talk"), h(Button,{variant:'outline'},'Cancel'), h(Button,{variant:'ghost'},'Skip'), h(Button,{variant:'link'},'See more results'), h(Button,{variant:'destructive'},'Withdraw'), h(Button,{size:'icon',variant:'outline','aria-label':'Next'},'→')), h('div',{className:'flex flex-wrap items-center gap-inset-md rounded-containers bg-card p-inset-md'}, h(Button,{variant:'secondary'},'Filter'), h(Button,{size:'sm'},'Subscribe'), h(Button,{size:'sm',variant:'outline'},'Share'))))
+  }
+})()
+</script>

@@ -1,0 +1,11 @@
+<!-- @dsCard group="Overlays" height=180 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(TooltipProvider,null, h('div',{className:'inline-flex pt-section'}, h(Tooltip,{open:true}, h(TooltipTrigger,{className:buttonVariants({variant:'outline',size:'sm'})},'IA'), h(TooltipContent,null,'Insight to Action')))))
+  }
+})()
+</script>

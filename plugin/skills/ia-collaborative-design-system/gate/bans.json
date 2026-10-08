@@ -1,0 +1,65 @@
+[
+  {
+    "check": {
+      "kind": "class",
+      "value": "font-serif"
+    },
+    "id": "no-serif",
+    "text": "No serif type anywhere: headings, prose, captions, decks are all --font-sans. IA is one sans family.",
+    "why": "The site paints one family, Benton Sans; a serif reads as another firm."
+  },
+  {
+    "check": {
+      "kind": "class-prefix",
+      "value": "border-l-"
+    },
+    "id": "no-left-border-accent",
+    "text": "No left-border accent cards, quotes or callouts. IA's accent line is the hairline above a we statement; otherwise a full --border hairline.",
+    "why": "The left stripe is a generic template move; IA's only coloured rule runs on top."
+  },
+  {
+    "check": {
+      "kind": "css-function",
+      "value": "radial-gradient"
+    },
+    "id": "no-radial-gradient",
+    "text": "No radial gradients, glows or blurred blobs painted in CSS. IA's only soft blue fields are the two image files.",
+    "why": "The site has no CSS colour gradient; its atmosphere is photographic (chatbg, ia-blue-field-2)."
+  },
+  {
+    "check": {
+      "kind": "class-prefix",
+      "value": "bg-radial"
+    },
+    "id": "no-bg-radial",
+    "text": "No Tailwind radial gradient utilities; same rule as no-radial-gradient.",
+    "why": "The site has no CSS colour gradient."
+  },
+  {
+    "check": {
+      "kind": "css-function",
+      "value": "conic-gradient"
+    },
+    "id": "no-conic-gradient",
+    "text": "No conic gradients, rings or colour wheels.",
+    "why": "Not in IA's vocabulary; charts are flat --chart-1 to --chart-4."
+  },
+  {
+    "check": {
+      "kind": "css-property",
+      "value": "backdrop-filter"
+    },
+    "id": "no-backdrop-filter",
+    "text": "No frosted glass. The floating nav, the mode tabs and the chat pill are solid surfaces with a hairline, not blurred.",
+    "why": "The nav reads as plain white with a border; glass is not in the capture."
+  },
+  {
+    "check": {
+      "kind": "class-prefix",
+      "value": "backdrop-blur"
+    },
+    "id": "no-backdrop-blur",
+    "text": "No Tailwind backdrop-blur utilities; same rule as no-backdrop-filter.",
+    "why": "Solid surfaces only."
+  }
+]

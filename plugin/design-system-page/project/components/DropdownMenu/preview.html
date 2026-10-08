@@ -1,0 +1,11 @@
+<!-- @dsCard group="Overlays" height=260 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(DropdownMenu,{open:true,onOpenChange:function(){},modal:false}, h(DropdownMenuTrigger,{className:buttonVariants({variant:'outline'})},'View'), h(DropdownMenuContent,{align:'start',className:'w-56'}, h(DropdownMenuLabel,null,'Read the site as'), h(DropdownMenuRadioGroup,{value:'classic'}, h(DropdownMenuRadioItem,{value:'classic'},'Classic'), h(DropdownMenuRadioItem,{value:'agentic'},'Agentic'), h(DropdownMenuRadioItem,{value:'machine'},'Machine')), h(DropdownMenuSeparator,null), h(DropdownMenuItem,null,'Contact IA', h(DropdownMenuShortcut,null,'⌘K')))))
+  }
+})()
+</script>

@@ -1,0 +1,11 @@
+<!-- @dsCard group="Navigation" height=300 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(Command,{className:'max-w-md rounded-containers border'}, h(CommandInput,{placeholder:'Search IA…'}), h(CommandList,null, h(CommandEmpty,null,'Nothing found.'), h(CommandGroup,{heading:'Insights'}, h(CommandItem,null,'The IDEALS Model'), h(CommandItem,null,'Digital Innovation Guide')), h(CommandSeparator,null), h(CommandGroup,{heading:'Services'}, h(CommandItem,null,'Enterprise Data & AI Strategy'), h(CommandItem,null,'Experience and Product')))))
+  }
+})()
+</script>

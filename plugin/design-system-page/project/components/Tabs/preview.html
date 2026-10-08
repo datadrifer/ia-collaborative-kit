@@ -1,0 +1,11 @@
+<!-- @dsCard group="Navigation" height=170 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(Tabs,{defaultValue:'classic',className:'max-w-md'}, h(TabsList,null, h(TabsTrigger,{value:'classic'},'Classic'), h(TabsTrigger,{value:'agentic'},'Agentic'), h(TabsTrigger,{value:'machine'},'Machine')), h(TabsContent,{value:'classic',className:'pt-inset-md text-body'},'The site as people read it.'), h(TabsContent,{value:'agentic',className:'pt-inset-md text-body'},'Ask IA a question and get a tailored path.'), h(TabsContent,{value:'machine',className:'pt-inset-md font-mono text-small'},'# IA Collaborative')))
+  }
+})()
+</script>

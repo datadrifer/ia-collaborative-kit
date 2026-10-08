@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>Button</title>
+</head>
+<body>
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'flex flex-col gap-inset-md'}, h('div',{className:'flex flex-wrap items-center gap-inset-md'}, h(Button,null,"Let's talk"), h(Button,{variant:'outline'},'Cancel'), h(Button,{variant:'ghost'},'Skip'), h(Button,{variant:'link'},'See more results'), h(Button,{variant:'destructive'},'Withdraw'), h(Button,{size:'icon',variant:'outline','aria-label':'Next'},'→')), h('div',{className:'flex flex-wrap items-center gap-inset-md rounded-containers bg-card p-inset-md'}, h(Button,{variant:'secondary'},'Filter'), h(Button,{size:'sm'},'Subscribe'), h(Button,{size:'sm',variant:'outline'},'Share'))))
+  }
+})()
+</script>
+
+</body>
+</html>

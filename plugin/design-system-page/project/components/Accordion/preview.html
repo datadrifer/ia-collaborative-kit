@@ -1,0 +1,11 @@
+<!-- @dsCard group="Navigation" height=260 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(Accordion,{type:'single',collapsible:true,defaultValue:'i',className:'max-w-md'}, h(AccordionItem,{value:'i'}, h(AccordionTrigger,null,'Intelligence'), h(AccordionContent,null,'What model, algorithm and context will we engineer?')), h(AccordionItem,{value:'d'}, h(AccordionTrigger,null,'Data'), h(AccordionContent,null,'What data sources and integrations will unlock value?')), h(AccordionItem,{value:'e'}, h(AccordionTrigger,null,'Experience'), h(AccordionContent,null,'How will it be used?'))))
+  }
+})()
+</script>

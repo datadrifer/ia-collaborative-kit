@@ -1,0 +1,49 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>IA Collaborative</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--background); color:var(--foreground); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; width:960px; height:288px; overflow:hidden; }
+  /* the top band: blocks and the one mark, full width, 120 tall, bled off the top and the right */
+  .band { position:absolute; top:0; left:0; width:960px; height:120px; }
+  .band svg { display:block; width:960px; height:120px; overflow:hidden; }
+  .blue { fill:var(--primary); }
+  .relief { fill:var(--palette-light-gray); }
+  .ink { fill:var(--foreground); }
+  .blk { rx:var(--radius-containers); }
+  .mark { fill:var(--primary); }
+  /* the name under the band, one line at 64px, then the tagline */
+  .words { position:absolute; left:var(--space-stack-lg); right:var(--space-stack-lg); bottom:var(--space-stack-lg); }
+  .name { margin:0; font-size:64px; line-height:.95; font-weight:700; letter-spacing:-.015em; color:var(--foreground); }
+  .tag { margin:var(--space-inset-xs) 0 0; font-size:14px; line-height:20px; color:var(--muted-foreground); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="band" aria-hidden="true">
+<svg viewBox="0 0 960 120" width="960" height="120">
+<!--
+  blocks      primary 480×134 (IA blue, the one hue, the biggest) · palette-light-gray 320×134 (IA's grey panel, the relief) · foreground 96×134 bled off the right (IA's black, the second surface) — ≈38% of 960×288
+  arrangement top-band skeleton (the name runs past 440px at 64px); a strip of unequal bands, blue 3fr to grey 2fr (IA's own split-panel ratio) plus one black satellite, all bled off the top like panels cut by the frame
+  pattern     literal motif: IA's asterisk, its own path, once, as the 60px corner mark top-right of the grey panel at space-inset-lg; one only, because IA's rule is one asterisk per view and never a pattern
+  scales      gutters space-stack-sm (24); left inset space-stack-lg (40); corners radius-containers (14); the mark is the display size (60) at the space-inset-lg (24) inset
+-->
+<rect class="blue blk" x="40" y="-14" width="480" height="134" rx="14"/>
+<rect class="relief blk" x="544" y="-14" width="320" height="134" rx="14"/>
+<rect class="ink blk" x="888" y="-14" width="96" height="134" rx="14"/>
+<g transform="translate(780 24) scale(0.23529)">
+<path class="mark" d="M127.2 142.2L80.9998 240L46.7998 220.2L108 131.4L-0.000193417 138.6V101.4L108.6 109.2L46.7998 20.4L80.9998 3.05176e-05L127.2 97.8L173.4 3.05176e-05L207.6 20.4L146.4 109.2L254.4 101.4V138.6L146.4 131.4L207.6 220.2L174 240L127.2 142.2Z"/>
+</g>
+</svg>
+</div>
+<div class="words">
+<h1 class="name">IA Collaborative</h1>
+<p class="tag">White pages, black type, one blue.</p>
+</div>
+</div>
+</body>
+</html>

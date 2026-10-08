@@ -1,0 +1,11 @@
+<!-- @dsCard group="Forms" height=170 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'grid max-w-sm gap-inset-xs'}, h(Label,{htmlFor:'m',className:'text-micro uppercase text-ink-eyebrow'},'Message'), h(Textarea,{id:'m',placeholder:'How can we help?'})))
+  }
+})()
+</script>

@@ -1,0 +1,2871 @@
+{
+  "$format": "substrate.spec/1",
+  "name": "IA Collaborative",
+  "source": {
+    "kind": "url",
+    "url": "https://www.iacollaborative.com/",
+    "viewport": {
+      "width": 1600,
+      "height": 1000
+    },
+    "capturedAt": "2026-10-07T23:59:29.678Z",
+    "tool": "@substrate/read capture (puppeteer-core + local Chrome)",
+    "consent": {
+      "cmp": "HEURISTIC-REJECT",
+      "result": "opted-out"
+    },
+    "pages": []
+  },
+  "modes": {
+    "light": true,
+    "dark": "derive",
+    "default": "light",
+    "mechanism": ".dark",
+    "note": "No dark scheme found in any stylesheet (no prefers-color-scheme rule, no theme attribute or class)."
+  },
+  "palette": {
+    "neutral-900": {
+      "value": "#171717",
+      "source": "site-css",
+      "from": "--color-neutral-900: lab(7.78201% -.0000149012 0)",
+      "confidence": 1,
+      "uses": 5
+    },
+    "zinc-800": {
+      "value": "#27272a",
+      "source": "site-css",
+      "from": "--color-zinc-800: lab(15.7305% .613764 -2.16959)",
+      "confidence": 1,
+      "uses": 3
+    },
+    "neutral-600": {
+      "value": "#525252",
+      "source": "site-css",
+      "from": "--color-neutral-600: lab(34.924% 0 0)",
+      "confidence": 1,
+      "uses": 3
+    },
+    "gray-100": {
+      "value": "#f3f4f6",
+      "source": "site-css",
+      "from": "--color-gray-100: lab(96.1596% -.0823438 -1.13575)",
+      "confidence": 1,
+      "uses": 2
+    },
+    "gray-200": {
+      "value": "#e5e7eb",
+      "source": "site-css",
+      "from": "--color-gray-200: lab(91.6229% -.159115 -2.26791)",
+      "confidence": 1,
+      "uses": 2
+    },
+    "neutral-400": {
+      "value": "#a1a1a1",
+      "source": "site-css",
+      "from": "--color-neutral-400: lab(66.128% -.0000298023 .0000119209)",
+      "confidence": 1,
+      "uses": 2
+    },
+    "primary": {
+      "value": "#176cd9",
+      "source": "site-css",
+      "from": "--color-primary: #176cd9",
+      "confidence": 1,
+      "uses": 2
+    },
+    "gray-500": {
+      "value": "#6a7282",
+      "source": "site-css",
+      "from": "--color-gray-500: lab(47.7841% -.393182 -10.0268)",
+      "confidence": 1,
+      "uses": 1
+    },
+    "neutral-700": {
+      "value": "#404040",
+      "source": "site-css",
+      "from": "--color-neutral-700: lab(27.036% 0 0)",
+      "confidence": 1,
+      "uses": 1
+    },
+    "black": {
+      "value": "#000000",
+      "source": "site-css",
+      "from": "--color-black: #000",
+      "confidence": 1,
+      "uses": 1
+    },
+    "white": {
+      "value": "#ffffff",
+      "source": "site-css",
+      "from": "--color-white: #fff",
+      "confidence": 1,
+      "uses": 1
+    },
+    "light-gray": {
+      "value": "#d7d7d7",
+      "source": "site-css",
+      "from": "--color-light-gray: #d7d7d7",
+      "confidence": 1,
+      "uses": 1
+    },
+    "dark-gray": {
+      "value": "#aeaeae",
+      "source": "site-css",
+      "from": "--color-dark-gray: #aeaeae",
+      "confidence": 1,
+      "uses": 1
+    }
+  },
+  "colors": {
+    "light": {
+      "background": {
+        "value": "#ffffff",
+        "source": "dom",
+        "from": "body background-color",
+        "confidence": 1,
+        "alias": "--background",
+        "follows": "palette.white"
+      },
+      "foreground": {
+        "value": "#000000",
+        "source": "dom",
+        "from": "body color (div.container.flex > div.flex.flex-row > h1.text-2xl.md:text-4xl is set in it)",
+        "confidence": 1,
+        "alias": "--color-black",
+        "follows": "palette.black"
+      },
+      "primary": {
+        "value": "#176cd9",
+        "source": "answer",
+        "from": "--color-primary: #176cd9 (IA's own theme token); painted on the contact form's submit (bg-primary), the 'Let's talk' panel, every link and the asterisk",
+        "confidence": 1,
+        "alias": "--foreground",
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.primary"
+      },
+      "brand-base": {
+        "value": "#176cd9",
+        "source": "answer",
+        "from": "--color-primary: #176cd9 (IA's own theme token)",
+        "confidence": 1,
+        "alias": "--foreground",
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.primary"
+      },
+      "ring": {
+        "value": "#176cd9",
+        "source": "answer",
+        "from": "contact form inputs focus:border-primary (IA's own focus colour)",
+        "confidence": 1,
+        "alias": "--ring",
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.primary"
+      },
+      "secondary": {
+        "value": "#ffffff",
+        "source": "dom",
+        "from": "div.w-full > div.mx-auto.max-w-[1400px] > button.w-9.h-9 background-color",
+        "confidence": 0.9,
+        "alias": "--background",
+        "follows": "palette.white"
+      },
+      "secondary-foreground": {
+        "value": "#000000",
+        "source": "dom",
+        "from": "div.w-full > div.mx-auto.max-w-[1400px] > button.w-9.h-9 color",
+        "confidence": 1,
+        "alias": "--color-black",
+        "follows": "palette.black"
+      },
+      "text-secondary": {
+        "value": "#525252",
+        "source": "answer",
+        "from": "IA's long-form secondary text: the About page paragraphs, text-neutral-600 (#525252). The home card descriptions' gray-500 #6a7282 reads 4.39:1 on IA's grey card and stays in the palette (--palette-gray-500)",
+        "confidence": 1,
+        "alias": "--color-zinc-500",
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.neutral-600"
+      },
+      "heading": {
+        "value": "#000000",
+        "source": "dom",
+        "from": "div.relative.flex > div.w-full.flex > h2.text-base.md:text-lg color",
+        "confidence": 1,
+        "alias": "--color-black",
+        "follows": "palette.black"
+      },
+      "display": {
+        "value": "#000000",
+        "source": "dom",
+        "from": "div.container.flex > div.flex.flex-row > h1.text-2xl.md:text-4xl color",
+        "confidence": 1,
+        "alias": "--color-black",
+        "follows": "palette.black"
+      },
+      "interactive": {
+        "value": "#176cd9",
+        "source": "answer",
+        "from": "links: a.text-primary (We Deliver list, See More Results, Read Insights)",
+        "confidence": 1,
+        "alias": "--foreground",
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.primary"
+      },
+      "card": {
+        "value": "#f3f4f6",
+        "source": "answer",
+        "from": "the 'IA means Insight to Action' panel: bg-gray-100 rounded-xl border-gray-200 (home)",
+        "confidence": 1,
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.gray-100"
+      },
+      "card-foreground": {
+        "value": "#000000",
+        "source": "dom",
+        "from": "div.container > div.grid.grid-cols-2 > div.flex.flex-col color",
+        "confidence": 1,
+        "alias": "--color-black",
+        "follows": "palette.black"
+      },
+      "brand-strong": {
+        "value": "#176cd9",
+        "source": "answer",
+        "from": "the 'Want to create the future of human experience? Let's talk.' panel: a.bg-primary rounded-xl (home)",
+        "confidence": 1,
+        "alias": "--color-black",
+        "answered": [
+          "from"
+        ],
+        "follows": "palette.primary"
+      },
+      "border": {
+        "value": "#e5e7eb",
+        "source": "dom",
+        "from": "div.w-full > div.grid.grid-cols-1 > div.min-h-[360px].md:min-h-[420px] border-top-color",
+        "confidence": 0.9,
+        "follows": "palette.gray-200"
+      },
+      "primary-hover": {
+        "value": "#1977ef",
+        "source": "answer",
+        "confidence": 1
+      },
+      "inverse-surface": {
+        "value": "#000000",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.black"
+      },
+      "inverse-foreground": {
+        "value": "#ffffff",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.white"
+      },
+      "input": {
+        "value": "#d7d7d7",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.light-gray"
+      },
+      "eyebrow": {
+        "value": "#aeaeae",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.dark-gray"
+      },
+      "chart-1": {
+        "value": "#176cd9",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.primary"
+      },
+      "chart-2": {
+        "value": "#000000",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.black"
+      },
+      "chart-3": {
+        "value": "#6a7282",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.gray-500"
+      },
+      "chart-4": {
+        "value": "#144e9c",
+        "source": "answer",
+        "confidence": 1
+      },
+      "primary-foreground": {
+        "value": "#ffffff",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.white"
+      },
+      "brand-contrast": {
+        "value": "#ffffff",
+        "source": "answer",
+        "confidence": 1,
+        "follows": "palette.white"
+      },
+      "destructive": {
+        "value": "#e7000b",
+        "source": "answer",
+        "confidence": 1
+      }
+    },
+    "dark": {
+      "ink-heading": {
+        "value": "#f9f9f9",
+        "source": "answer",
+        "confidence": 1
+      },
+      "ink-display": {
+        "value": "#f9f9f9",
+        "source": "answer",
+        "confidence": 1
+      },
+      "inverse-surface": {
+        "value": "#f9f9f9",
+        "source": "answer",
+        "confidence": 1
+      },
+      "inverse-foreground": {
+        "value": "#0a0a0a",
+        "source": "answer",
+        "confidence": 1
+      },
+      "primary-hover": {
+        "value": "#2474e0",
+        "source": "answer",
+        "confidence": 1
+      },
+      "chart-1": {
+        "value": "#78adf9",
+        "source": "answer",
+        "confidence": 1
+      },
+      "chart-2": {
+        "value": "#f9f9f9",
+        "source": "answer",
+        "confidence": 1
+      },
+      "chart-3": {
+        "value": "#ababab",
+        "source": "answer",
+        "confidence": 1
+      },
+      "chart-4": {
+        "value": "#2169cc",
+        "source": "answer",
+        "confidence": 1
+      },
+      "chart-5": {
+        "value": "#8a8a8a",
+        "source": "answer",
+        "confidence": 1
+      }
+    }
+  },
+  "radius": {
+    "controls": {
+      "px": 8,
+      "source": "answer",
+      "from": "the site's shadcn controls: rounded-md (8px) on the mode tabs and the 'See More Results' button; the site's own --radius: .625rem ladder (6/8/10/14). The pill (rounded-full) primary action and chat input are a brand rule in the brief, not the controls radius: a 9999px controls radius moves the whole numeric ladder to the pill base (14/16/18/22/26) and rounds every card to 22px",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "inputs": {
+      "px": 10,
+      "source": "answer",
+      "from": "contact form inputs and textarea: rounded-lg (10px; the site's --radius: .625rem)",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "containers": {
+      "px": 14,
+      "source": "dom",
+      "from": "div.w-full > div.grid.grid-cols-1 > div.min-h-[360px].md:min-h-[420px] border-radius",
+      "confidence": 1
+    }
+  },
+  "controls": {
+    "button-height": {
+      "px": 48,
+      "source": "answer",
+      "from": "contact form submit (py-3, 48px) and the article 'Let's talk' button (px-6 py-3, 48px)",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "button-pad-x": {
+      "px": 32,
+      "source": "answer",
+      "from": "contact form submit px-8",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "input-height": {
+      "px": 48,
+      "source": "answer",
+      "from": "contact form inputs (py-3 + 16px text = 48px inside a 1px border) and the chat pill input (md:h-12)",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    }
+  },
+  "lines": {
+    "focus": {
+      "px": 1,
+      "offset": 0,
+      "color": "#a1a1a1",
+      "source": "dom",
+      "from": "div.w-full > div.mx-auto.max-w-[1400px] > button.w-9.h-9:focus-visible outline",
+      "confidence": 1
+    },
+    "card-border": {
+      "px": 1,
+      "source": "dom",
+      "from": "div.w-full > div.grid.grid-cols-1 > div.min-h-[360px].md:min-h-[420px] border-width",
+      "confidence": 1
+    },
+    "outline-ring": {
+      "px": 1,
+      "color": "#d1d5dc",
+      "style": "border",
+      "source": "dom",
+      "from": "div.w-full > div.mx-auto.max-w-[1400px] > button.w-9.h-9 border",
+      "confidence": 1
+    }
+  },
+  "fonts": {
+    "sans": {
+      "family": "Benton Sans",
+      "stack": "Benton Sans, BentonSans, Libre Franklin, system-ui, sans-serif",
+      "weights": [
+        300,
+        400,
+        500,
+        700
+      ],
+      "italic": "none",
+      "painted": "bentonSans",
+      "metrics": {
+        "400": {
+          "xHeight": 0.5278,
+          "capHeight": 0.7402,
+          "xWidthAvg": 0.4657
+        },
+        "500": {
+          "xHeight": 0.5308,
+          "capHeight": 0.7402,
+          "xWidthAvg": 0.481
+        },
+        "700": {
+          "xHeight": 0.5332,
+          "capHeight": 0.7402,
+          "xWidthAvg": 0.4965
+        }
+      },
+      "standIn": {
+        "family": "Libre Franklin",
+        "similarity": 0.89,
+        "category": "s",
+        "weight": 400,
+        "why": "the closest letter shapes of 23 free faces drawn beside bentonSans at 400 (shape 86%); width 0%, x-height +0%, cap height +0%",
+        "shape": 0.86,
+        "method": "shape+metrics",
+        "href": "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap",
+        "weights": [
+          300,
+          400,
+          500,
+          600,
+          700
+        ],
+        "alternatives": [
+          {
+            "family": "Public Sans",
+            "similarity": 0.87,
+            "shape": 0.85
+          },
+          {
+            "family": "Schibsted Grotesk",
+            "similarity": 0.86,
+            "shape": 0.84
+          },
+          {
+            "family": "Geist",
+            "similarity": 0.85,
+            "shape": 0.82
+          }
+        ],
+        "source": "match"
+      },
+      "source": "answer",
+      "from": "a.flex-shrink-0.max-w-[80vw] > div.mt-3.px-1 > p.text-md.text-gray-500 font-family",
+      "confidence": 1,
+      "answered": [
+        "stack"
+      ]
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "stack": "JetBrains Mono, monospace",
+      "weights": [
+        400,
+        500,
+        700
+      ],
+      "italic": "none",
+      "standIn": {
+        "family": "JetBrains Mono",
+        "similarity": 1,
+        "category": "m",
+        "exact": true,
+        "why": "\"JetBrains Mono\" is on Google Fonts; it loads as itself",
+        "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap",
+        "weights": [
+          400,
+          500,
+          700
+        ],
+        "alternatives": [],
+        "source": "match"
+      },
+      "source": "hand",
+      "from": "IA site token --default-mono-font-family: var(--font-jetbrains-mono-family); the Machine view (section.machine-section, 14px/28px) — hidden at capture time",
+      "confidence": 1
+    }
+  },
+  "type": {
+    "display-1": {
+      "px": 60,
+      "lineHeight": 1,
+      "tracking": "-0.015em",
+      "weight": 600,
+      "family": "sans",
+      "color": "#000000",
+      "declared": "--text-4xl: 2.25rem",
+      "source": "answer",
+      "from": "steered: IA's site loads Benton Sans only at 300, 400, 500 and 700, and its own CSS asks for 600 on page titles and article questions; with no 600 file the browser renders Benton Bold. Setting IA's bold steps to 600 therefore changes nothing where Benton Sans is installed, while Libre Franklin, the free stand-in, renders a true SemiBold. Two independent judges read Libre Franklin 700 at display sizes as Black/ExtraBold beside IA's Benton Bold; 600 matches Benton Bold's colour. (was 700, read from steered: Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site. (was -0.03em, read from classic/about hero h1 'About Us': text-4xl md:text-6xl font-bold, 60px/60px, -1.8px))",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "heading-2": {
+      "px": 36,
+      "lineHeight": 1.11,
+      "tracking": "-0.02em",
+      "weight": 500,
+      "renderedWeight": 300,
+      "family": "sans",
+      "color": "#000000",
+      "declared": "--text-lg: 1.125rem",
+      "source": "answer",
+      "from": "steered: Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site. (was -0.03em, read from steered: IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement. (was 700, read from home scroll hero h2 (md:text-3xl font-bold leading-tight, 30px/37.5px, -0.9px) and the article h2 (30px/40px bold)))",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "heading-3": {
+      "px": 30,
+      "lineHeight": 1.25,
+      "tracking": "-0.015em",
+      "weight": 600,
+      "family": "sans",
+      "color": "#ffffff",
+      "declared": "--text-2xl: 1.5rem",
+      "source": "answer",
+      "from": "steered: IA's site loads Benton Sans only at 300, 400, 500 and 700, and its own CSS asks for 600 on page titles and article questions; with no 600 file the browser renders Benton Bold. Setting IA's bold steps to 600 therefore changes nothing where Benton Sans is installed, while Libre Franklin, the free stand-in, renders a true SemiBold. Two independent judges read Libre Franklin 700 at display sizes as Black/ExtraBold beside IA's Benton Bold; 600 matches Benton Bold's colour. (was 700, read from steered: Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site. (was -0.03em, read from steered: IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement. (was 700, read from steered: Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site. (was -0.03em, read from steered: IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement. (was 700, read from div.absolute.bottom-0 > div.flex.flex-row > h3.text-2xl.font-bold)))))",
+      "confidence": 1
+    },
+    "body": {
+      "px": 16,
+      "lineHeight": 1.5,
+      "tracking": "0",
+      "weight": 400,
+      "family": "sans",
+      "color": "#6a7282",
+      "declared": "--text-base: 1rem",
+      "source": "dom",
+      "from": "a.flex-shrink-0.max-w-[80vw] > div.mt-3.px-1 > p.text-md.text-gray-500",
+      "confidence": 0.8
+    },
+    "small": {
+      "px": 14,
+      "lineHeight": 1.43,
+      "tracking": "0",
+      "weight": 400,
+      "family": "sans",
+      "color": "#ffffff",
+      "declared": "--text-sm: .875rem",
+      "source": "dom",
+      "from": "footer and card meta: text-sm 14px/20px",
+      "confidence": 0.8,
+      "answered": [
+        "from"
+      ]
+    },
+    "button": {
+      "px": 16,
+      "lineHeight": 1.5,
+      "tracking": "0",
+      "weight": 500,
+      "family": "sans",
+      "color": "#000000",
+      "declared": "--text-base: 1rem",
+      "source": "answer",
+      "from": "contact form submit: rounded-full px-8 py-3 text-base font-medium bg-primary text-white",
+      "confidence": 1,
+      "answered": [
+        "from"
+      ]
+    },
+    "input": {
+      "px": 16,
+      "lineHeight": 1.56,
+      "tracking": "0",
+      "weight": 400,
+      "family": "sans",
+      "color": "#ffffff",
+      "declared": "--text-lg: 1.125rem",
+      "source": "answer",
+      "from": "div.min-h-[360px].md:min-h-[420px] > div.relative.mt-6 > input.mx-3.h-10",
+      "confidence": 1
+    },
+    "heading-1": {
+      "px": 48,
+      "source": "answer",
+      "confidence": 1,
+      "lineHeight": 1.15,
+      "tracking": "-0.01em",
+      "weight": 600,
+      "family": "sans",
+      "from": "steered: IA's site loads Benton Sans only at 300, 400, 500 and 700, and its own CSS asks for 600 on page titles and article questions; with no 600 file the browser renders Benton Bold. Setting IA's bold steps to 600 therefore changes nothing where Benton Sans is installed, while Libre Franklin, the free stand-in, renders a true SemiBold. Two independent judges read Libre Franklin 700 at display sizes as Black/ExtraBold beside IA's Benton Bold; 600 matches Benton Bold's colour. (was 700, read from steered: Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site. (was -0.025em, read from steered: IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement. (was 500, read from steered: Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site. (was -0.025em, read from steered: IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement. (was 500)))))"
+    },
+    "lead": {
+      "px": 20,
+      "source": "answer",
+      "confidence": 1,
+      "lineHeight": 1.625,
+      "tracking": "0",
+      "weight": 400,
+      "family": "sans"
+    },
+    "eyebrow": {
+      "px": 12,
+      "source": "answer",
+      "confidence": 1,
+      "lineHeight": 1.33,
+      "tracking": "0.05em",
+      "weight": 500,
+      "family": "sans"
+    }
+  },
+  "spacing": {
+    "gutter": {
+      "px": 32,
+      "source": "dom",
+      "from": "main.flex-1 > div.block > div.container padding-left",
+      "confidence": 1
+    },
+    "card-pad": {
+      "px": 24,
+      "source": "dom",
+      "from": "div.w-full > div.grid.grid-cols-1 > div.min-h-[360px].md:min-h-[420px] padding",
+      "confidence": 1
+    },
+    "page-max": {
+      "px": 1400,
+      "source": "dom",
+      "from": "main.flex-1 > div.block > div.container max-width",
+      "confidence": 1
+    },
+    "band": {
+      "px": 100,
+      "source": "answer",
+      "confidence": 1
+    },
+    "grid": {
+      "px": 24,
+      "source": "answer",
+      "confidence": 1
+    },
+    "stack": {
+      "px": 40,
+      "source": "answer",
+      "confidence": 1
+    }
+  },
+  "surfaces": {
+    "page": {
+      "bg": "#ffffff",
+      "fg": "#000000"
+    },
+    "jewel-black": {
+      "bg": "#000000",
+      "fg": "#000000"
+    },
+    "jewel-div.container > div.grid.grid-cols-2 > div.flex.flex-col": {
+      "bg": "#1d1d1d",
+      "fg": "#000000"
+    }
+  },
+  "motion": {
+    "tw-animation-delay": "0s",
+    "easeOut": "cubic-bezier(0,0,.2,1)",
+    "defaultTransitionTimingFunction": "cubic-bezier(.4,0,.2,1)",
+    "source": "site-css",
+    "confidence": 1
+  },
+  "elevation": {
+    "shadows": "present",
+    "values": [
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px",
+      "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px"
+    ],
+    "source": "dom",
+    "from": "div.relative.py-5 > div.absolute.inset-y-0 > button.inline-flex.items-center, div.group/tabs.flex > div.rounded-lg.p-[3px] > button#radix-_R_atb_-trigger-classic",
+    "confidence": 0.9
+  },
+  "brand": {
+    "elements": [
+      {
+        "kind": "logo",
+        "file": "capture/svg/svg-fadb2f-fadb2f0872.svg",
+        "key": "svg-fadb2f",
+        "count": 1,
+        "currentColor": false,
+        "color": "#000000",
+        "size": [
+          60,
+          59
+        ],
+        "viewBox": "0 0 60 59",
+        "dom": "div.flex.h-[60px] > button.w-[60px].h-[60px] > svg",
+        "ship": true
+      },
+      {
+        "kind": "svg",
+        "file": "capture/svg/lucide-88d0-88d0a650e8.svg",
+        "key": "lucide-88d0",
+        "count": 1,
+        "currentColor": false,
+        "color": "#000000",
+        "size": [
+          48,
+          48
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.absolute.bottom-20 > a > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-a2d4-a2d46f878d.svg",
+        "key": "lucide-a2d4",
+        "count": 5,
+        "currentColor": false,
+        "color": "#ffffff",
+        "size": [
+          24,
+          24
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.absolute.bottom-0 > div.flex.flex-row > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-be81-be81885f58.svg",
+        "key": "lucide-be81",
+        "count": 2,
+        "currentColor": false,
+        "color": "#101828",
+        "size": [
+          16,
+          16
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.mx-auto.max-w-[1400px] > button.w-9.h-9 > svg.lucide.lucide-chevron-left",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-258e-258eefd596.svg",
+        "key": "lucide-258e",
+        "count": 2,
+        "currentColor": false,
+        "color": "#101828",
+        "size": [
+          16,
+          16
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.mx-auto.max-w-[1400px] > button.w-9.h-9 > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-53a6-53a66387ba.svg",
+        "key": "lucide-53a6",
+        "count": 4,
+        "currentColor": false,
+        "color": "#176cd9",
+        "size": [
+          24,
+          24
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.w-full.flex > a.w-full.text-xl > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-f9b2-f9b27a4a28.svg",
+        "key": "lucide-f9b2",
+        "count": 2,
+        "currentColor": false,
+        "color": "#176cd9",
+        "size": [
+          16,
+          16
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.container.flex > a.inline-flex.items-center > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-f38b-f38b45ca46.svg",
+        "key": "lucide-f38b",
+        "count": 1,
+        "currentColor": false,
+        "color": "#404040",
+        "size": [
+          16,
+          16
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.absolute.inset-y-0 > button.inline-flex.items-center > svg.lucide.lucide-pause",
+        "ship": true
+      },
+      {
+        "kind": "motif",
+        "file": "capture/svg/lucide-0ff7-0ff7f4cd91.svg",
+        "key": "lucide-0ff7",
+        "count": 3,
+        "currentColor": false,
+        "color": "#4a5565",
+        "size": [
+          32,
+          32
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "a.flex-shrink-0.max-w-[80vw] > div.relative.overflow-hidden > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-2e98-2e980ec169.svg",
+        "key": "lucide-2e98",
+        "count": 1,
+        "currentColor": false,
+        "color": "#52525c",
+        "size": [
+          24,
+          24
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.relative.mt-6 > button.flex.h-11 > svg.lucide.lucide-arrow-up",
+        "ship": true
+      },
+      {
+        "kind": "svg",
+        "file": "capture/svg/lucide-6e74-6e749296c0.svg",
+        "key": "lucide-6e74",
+        "count": 1,
+        "currentColor": false,
+        "color": "#4a5565",
+        "size": [
+          48,
+          48
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "a.group.rounded-xl > div.w-full.flex > svg.lucide.lucide-chevron-right",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-7a7d-7a7de77ee5.svg",
+        "key": "lucide-7a7d",
+        "count": 1,
+        "currentColor": false,
+        "color": "#52525c",
+        "size": [
+          0,
+          0
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.flex.items-center > button.rounded-lg.p-1.5 > svg.lucide.lucide-plus",
+        "ship": true
+      },
+      {
+        "kind": "icon",
+        "file": "capture/svg/lucide-13d2-13d2f85513.svg",
+        "key": "lucide-13d2",
+        "count": 1,
+        "currentColor": false,
+        "color": "#9f9fa9",
+        "size": [
+          0,
+          0
+        ],
+        "viewBox": "0 0 24 24",
+        "dom": "div.flex.items-center > button.flex.h-9 > svg.lucide.lucide-arrow-up",
+        "ship": true
+      },
+      {
+        "kind": "decorative-image",
+        "file": "https://cms.iacollaborative.com/uploads/medium_google_illustration_202091d5b9.png",
+        "key": "https://cms.iacollaborative.com/uploads/medium_google_illustration_202091d5b9.png",
+        "count": 1,
+        "size": [
+          424,
+          229
+        ],
+        "ship": true
+      },
+      {
+        "kind": "decorative-image",
+        "file": "https://cms.iacollaborative.com/uploads/medium_apple_illustration_0eced36d3b.png",
+        "key": "https://cms.iacollaborative.com/uploads/medium_apple_illustration_0eced36d3b.png",
+        "count": 1,
+        "size": [
+          424,
+          386
+        ],
+        "ship": true
+      },
+      {
+        "kind": "decorative-image",
+        "file": "https://cms.iacollaborative.com/uploads/medium_airbnb_illustration_0f89120bee.png",
+        "key": "https://cms.iacollaborative.com/uploads/medium_airbnb_illustration_0f89120bee.png",
+        "count": 1,
+        "size": [
+          424,
+          224
+        ],
+        "ship": true
+      },
+      {
+        "kind": "decorative-image",
+        "file": "https://cms.iacollaborative.com/uploads/medium_eli_lilly_illustration_4b8a818d61.png",
+        "key": "https://cms.iacollaborative.com/uploads/medium_eli_lilly_illustration_4b8a818d61.png",
+        "count": 1,
+        "size": [
+          424,
+          276
+        ],
+        "ship": true
+      },
+      {
+        "kind": "decorative-image",
+        "file": "https://cms.iacollaborative.com/uploads/medium_nike_illustration_39649fdd54.png",
+        "key": "https://cms.iacollaborative.com/uploads/medium_nike_illustration_39649fdd54.png",
+        "count": 1,
+        "size": [
+          424,
+          262
+        ],
+        "ship": true
+      },
+      {
+        "kind": "decorative-image",
+        "file": "https://cms.iacollaborative.com/uploads/large_audi_illustration_e24597e760.png",
+        "key": "https://cms.iacollaborative.com/uploads/large_audi_illustration_e24597e760.png",
+        "count": 1,
+        "size": [
+          424,
+          466
+        ],
+        "ship": true
+      }
+    ],
+    "tokens": {
+      "--tw-ring-offset-color": "#ffffff",
+      "--color-red-100": "#ffe2e2",
+      "--color-red-200": "#ffc9c9",
+      "--color-red-300": "#ffa2a2",
+      "--color-red-400": "#ff6467",
+      "--color-red-500": "#fb2c36",
+      "--color-red-600": "#e7000b",
+      "--color-green-100": "#dcfce7",
+      "--color-green-600": "#00a63e",
+      "--color-blue-100": "#dbeafe",
+      "--color-blue-400": "#51a2ff",
+      "--color-blue-500": "#2b7fff",
+      "--color-blue-600": "#155dfc",
+      "--color-blue-700": "#1447e6",
+      "--color-gray-50": "#f9fafb",
+      "--color-gray-100": "#f3f4f6",
+      "--color-gray-200": "#e5e7eb",
+      "--color-gray-300": "#d1d5dc",
+      "--color-gray-400": "#99a1af",
+      "--color-gray-500": "#6a7282",
+      "--color-gray-600": "#4a5565",
+      "--color-gray-700": "#364153",
+      "--color-gray-900": "#101828",
+      "--color-zinc-100": "#f4f4f5",
+      "--color-zinc-200": "#e4e4e7",
+      "--color-zinc-300": "#d4d4d8",
+      "--color-zinc-400": "#9f9fa9",
+      "--color-zinc-500": "#71717b",
+      "--color-zinc-600": "#52525c",
+      "--color-zinc-700": "#3f3f46",
+      "--color-zinc-800": "#27272a",
+      "--color-zinc-900": "#18181b",
+      "--color-neutral-50": "#fafafa",
+      "--color-neutral-100": "#f5f5f5",
+      "--color-neutral-200": "#e5e5e5",
+      "--color-neutral-300": "#d4d4d4",
+      "--color-neutral-400": "#a1a1a1",
+      "--color-neutral-500": "#737373",
+      "--color-neutral-600": "#525252",
+      "--color-neutral-700": "#404040",
+      "--color-neutral-800": "#262626",
+      "--color-neutral-900": "#171717",
+      "--color-black": "#000000",
+      "--color-white": "#ffffff",
+      "--color-primary": "#176cd9",
+      "--color-light-gray": "#d7d7d7",
+      "--color-dark-gray": "#aeaeae",
+      "--background": "#ffffff",
+      "--foreground": "#0a0a0a",
+      "--card": "#ffffff",
+      "--card-foreground": "#0a0a0a",
+      "--popover": "#ffffff",
+      "--popover-foreground": "#0a0a0a",
+      "--primary": "#171717",
+      "--primary-foreground": "#fafafa",
+      "--secondary": "#f5f5f5",
+      "--secondary-foreground": "#171717",
+      "--muted": "#f5f5f5",
+      "--muted-foreground": "#737373",
+      "--accent": "#f5f5f5",
+      "--accent-foreground": "#171717",
+      "--destructive": "#e7000b",
+      "--border": "#e5e5e5",
+      "--input": "#e5e5e5",
+      "--ring": "#a1a1a1",
+      "--chart-1": "#f54a00",
+      "--chart-2": "#009689",
+      "--chart-3": "#104e64",
+      "--chart-4": "#ffba00",
+      "--chart-5": "#fd9a00",
+      "--sidebar": "#fafafa",
+      "--sidebar-foreground": "#0a0a0a",
+      "--sidebar-primary": "#171717",
+      "--sidebar-primary-foreground": "#fafafa",
+      "--sidebar-accent": "#f5f5f5",
+      "--sidebar-accent-foreground": "#171717",
+      "--sidebar-border": "#e5e5e5",
+      "--sidebar-ring": "#a1a1a1"
+    },
+    "paints": 29,
+    "gradients": {
+      "present": true,
+      "count": 26,
+      "examples": [
+        "div.absolute.inset-x-0 > div.absolute.inset-0 > div.absolute.inset-0",
+        "div.relative.overflow-hidden > div.absolute.inset-x-0 > div.absolute.inset-0",
+        "div.relative.w-full > div.h-32 > div"
+      ],
+      "source": "dom",
+      "from": "a gradient on 26 paints"
+    },
+    "logo": "none",
+    "ship": "all"
+  },
+  "questions": [
+    {
+      "id": "colors.light.primary-foreground.pair",
+      "question": "primary-foreground #0a0a0a on primary #0a0a0a is 1:1 — invisible, so one of the two was read off the wrong element (div.group/tabs.flex > div.rounded-lg.p-[3px] > button#radix-_R_atb_-trigger-agentic color). Drop the ink, so the engine picks one that reads?",
+      "options": [
+        "Drop the ink",
+        "Keep it as read"
+      ],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.primary-foreground"
+      ]
+    },
+    {
+      "id": "colors.light.brand-contrast.pair",
+      "question": "brand-contrast #000000 on brand-strong #000000 is 1:1 — invisible, so one of the two was read off the wrong element (div.container > div.grid.grid-cols-2 > div.flex.flex-col color). Drop the ink, so the engine picks one that reads?",
+      "options": [
+        "Drop the ink",
+        "Keep it as read"
+      ],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.brand-contrast"
+      ]
+    },
+    {
+      "id": "type.heading-2.weight",
+      "question": "heading-2 text declares weight 100 but the page only loaded 300/400/500/700, so it renders at 300. Keep 300 or 100?",
+      "options": [
+        "Keep 300 (what people see)",
+        "Keep 100 (what the CSS says)"
+      ],
+      "answer": 700,
+      "by": "person",
+      "appliesTo": [
+        "type.heading-2.weight"
+      ]
+    },
+    {
+      "id": "modes.dark",
+      "question": "The site has no dark scheme (it is light by default). What should the system do for dark mode?",
+      "options": [
+        "Derive dark by rule",
+        "Light only",
+        "I will give dark values"
+      ],
+      "answer": "derive",
+      "by": "person",
+      "appliesTo": [
+        "modes.dark"
+      ]
+    },
+    {
+      "id": "palette.rare",
+      "question": "9 colours appear once on the page and in no role: red-200 #ffc9c9, red-300 #ffa2a2, red-600 #e7000b, green-600 #00a63e, blue-400 #51a2ff, blue-500 #2b7fff, blue-700 #1447e6, gray-700 #364153, gray-900 #101828. Accent or noise?",
+      "options": [
+        "Keep as brand palette",
+        "Drop them"
+      ],
+      "answer": "drop",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-200",
+        "palette.red-300",
+        "palette.red-600",
+        "palette.green-600",
+        "palette.blue-400",
+        "palette.blue-500",
+        "palette.blue-700",
+        "palette.gray-700",
+        "palette.gray-900"
+      ]
+    },
+    {
+      "id": "colors.light.semantic",
+      "question": "Semantic colours were taken from the site's token names (destructive ← --color-red-100 #ffe2e2, success ← --color-green-100 #dcfce7, info ← --color-blue-100 #dbeafe). Keep them?",
+      "options": [
+        "Use the readable steps of the same ramps",
+        "Keep them",
+        "Drop them; derive by rule"
+      ],
+      "answer": "drop",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.destructive",
+        "colors.light.success",
+        "colors.light.info"
+      ]
+    },
+    {
+      "id": "brand.logo",
+      "question": "A mark sits in the header (capture/svg/svg-fadb2f-fadb2f0872.svg, 60×59px). Whose logo is this?",
+      "options": [
+        "The brand's own",
+        "A third party (partner, platform, badge)",
+        "Not a logo"
+      ],
+      "answer": "none",
+      "by": "person",
+      "appliesTo": [
+        "brand.logo"
+      ]
+    },
+    {
+      "id": "brand.motifs",
+      "question": "Found 1 repeated inline SVG motif (lucide-0ff7). Ship them as brand files?",
+      "options": [
+        "Yes, all of them",
+        "Only the motifs, not the canvas",
+        "None"
+      ],
+      "answer": "all",
+      "by": "person",
+      "appliesTo": [
+        "brand.elements"
+      ]
+    },
+    {
+      "id": "colors.light.text-secondary",
+      "question": "colors.light.text-secondary read as #6a7282 from a.flex-shrink-0.max-w-[80vw] > div.mt-3.px-1 > p.text-md.text-gray-500 color (confidence 0.75). Is that right?",
+      "options": [
+        "Yes, #6a7282",
+        "#000000",
+        "#ffffff",
+        "None of these — skip it"
+      ],
+      "answer": "#6a7282",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.text-secondary"
+      ]
+    },
+    {
+      "id": "colors.light.accent",
+      "question": "colors.light.accent read as #0a0a0a from div.group/tabs.flex > div.rounded-lg.p-[3px] > button#radix-_R_atb_-trigger-agentic::after background-color — no second hue found (confidence 0.6). Is that right?",
+      "options": [
+        "Yes, #0a0a0a",
+        "#000000",
+        "#ffffff",
+        "None of these — skip it"
+      ],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.accent"
+      ]
+    },
+    {
+      "id": "colors.light.interactive",
+      "question": "colors.light.interactive read as #0a0a0a from div.group/tabs.flex > div.rounded-lg.p-[3px] > button#radix-_R_atb_-trigger-agentic::after background-color — links share the body ink (confidence 0.6). Is that right?",
+      "options": [
+        "Yes, #0a0a0a",
+        "#000000",
+        "#ffffff",
+        "None of these — skip it"
+      ],
+      "answer": "#176cd9",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.interactive"
+      ]
+    },
+    {
+      "id": "type.input",
+      "question": "type.input read as 18px from div.min-h-[360px].md:min-h-[420px] > div.relative.mt-6 > input.mx-3.h-10 (confidence 0.6). Is that right?",
+      "options": [
+        "Yes, 18px",
+        "None of these — skip it"
+      ],
+      "answer": 16,
+      "by": "person",
+      "appliesTo": [
+        "type.input"
+      ]
+    },
+    {
+      "id": "colors.light.primary.value",
+      "question": "Correction for colors.light.primary.value",
+      "options": [],
+      "answer": "#176cd9",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.primary.value"
+      ]
+    },
+    {
+      "id": "colors.light.primary.from",
+      "question": "Correction for colors.light.primary.from",
+      "options": [],
+      "answer": "--color-primary: #176cd9 (IA's own theme token); painted on the contact form's submit (bg-primary), the 'Let's talk' panel, every link and the asterisk",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.primary.from"
+      ]
+    },
+    {
+      "id": "colors.light.primary-foreground",
+      "question": "Correction for colors.light.primary-foreground",
+      "options": [],
+      "answer": "#ffffff",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.primary-foreground"
+      ]
+    },
+    {
+      "id": "colors.light.primary-hover",
+      "question": "Correction for colors.light.primary-hover",
+      "options": [],
+      "answer": "#1977ef",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.primary-hover"
+      ]
+    },
+    {
+      "id": "colors.light.brand-base.value",
+      "question": "Correction for colors.light.brand-base.value",
+      "options": [],
+      "answer": "#176cd9",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.brand-base.value"
+      ]
+    },
+    {
+      "id": "colors.light.brand-base.from",
+      "question": "Correction for colors.light.brand-base.from",
+      "options": [],
+      "answer": "--color-primary: #176cd9 (IA's own theme token)",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.brand-base.from"
+      ]
+    },
+    {
+      "id": "colors.light.interactive.from",
+      "question": "Correction for colors.light.interactive.from",
+      "options": [],
+      "answer": "links: a.text-primary (We Deliver list, See More Results, Read Insights)",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.interactive.from"
+      ]
+    },
+    {
+      "id": "colors.light.interactive-foreground",
+      "question": "Correction for colors.light.interactive-foreground",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.interactive-foreground"
+      ]
+    },
+    {
+      "id": "colors.light.ring.value",
+      "question": "Correction for colors.light.ring.value",
+      "options": [],
+      "answer": "#176cd9",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.ring.value"
+      ]
+    },
+    {
+      "id": "colors.light.ring.from",
+      "question": "Correction for colors.light.ring.from",
+      "options": [],
+      "answer": "contact form inputs focus:border-primary (IA's own focus colour)",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.ring.from"
+      ]
+    },
+    {
+      "id": "colors.light.card.value",
+      "question": "Correction for colors.light.card.value",
+      "options": [],
+      "answer": "#f3f4f6",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.card.value"
+      ]
+    },
+    {
+      "id": "colors.light.card.from",
+      "question": "Correction for colors.light.card.from",
+      "options": [],
+      "answer": "the 'IA means Insight to Action' panel: bg-gray-100 rounded-xl border-gray-200 (home)",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.card.from"
+      ]
+    },
+    {
+      "id": "colors.light.brand-strong.value",
+      "question": "Correction for colors.light.brand-strong.value",
+      "options": [],
+      "answer": "#176cd9",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.brand-strong.value"
+      ]
+    },
+    {
+      "id": "colors.light.brand-strong.from",
+      "question": "Correction for colors.light.brand-strong.from",
+      "options": [],
+      "answer": "the 'Want to create the future of human experience? Let's talk.' panel: a.bg-primary rounded-xl (home)",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.brand-strong.from"
+      ]
+    },
+    {
+      "id": "colors.light.brand-contrast",
+      "question": "Correction for colors.light.brand-contrast",
+      "options": [],
+      "answer": "#ffffff",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.brand-contrast"
+      ]
+    },
+    {
+      "id": "colors.light.inverse-surface",
+      "question": "Correction for colors.light.inverse-surface",
+      "options": [],
+      "answer": "#000000",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.inverse-surface"
+      ]
+    },
+    {
+      "id": "colors.light.inverse-foreground",
+      "question": "Correction for colors.light.inverse-foreground",
+      "options": [],
+      "answer": "#ffffff",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.inverse-foreground"
+      ]
+    },
+    {
+      "id": "colors.light.input",
+      "question": "Correction for colors.light.input",
+      "options": [],
+      "answer": "#d7d7d7",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.input"
+      ]
+    },
+    {
+      "id": "colors.light.eyebrow",
+      "question": "Correction for colors.light.eyebrow",
+      "options": [],
+      "answer": "#aeaeae",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.eyebrow"
+      ]
+    },
+    {
+      "id": "colors.light.destructive",
+      "question": "Correction for colors.light.destructive",
+      "options": [],
+      "answer": "#e7000b",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.destructive"
+      ]
+    },
+    {
+      "id": "palette.destructive",
+      "question": "Correction for palette.destructive",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.destructive"
+      ]
+    },
+    {
+      "id": "palette.foreground",
+      "question": "Correction for palette.foreground",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.foreground"
+      ]
+    },
+    {
+      "id": "palette.input",
+      "question": "Correction for palette.input",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.input"
+      ]
+    },
+    {
+      "id": "palette.ring",
+      "question": "Correction for palette.ring",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.ring"
+      ]
+    },
+    {
+      "id": "palette.secondary",
+      "question": "Correction for palette.secondary",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.secondary"
+      ]
+    },
+    {
+      "id": "palette.accent",
+      "question": "Correction for palette.accent",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.accent"
+      ]
+    },
+    {
+      "id": "palette.background",
+      "question": "Correction for palette.background",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.background"
+      ]
+    },
+    {
+      "id": "palette.muted",
+      "question": "Correction for palette.muted",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.muted"
+      ]
+    },
+    {
+      "id": "palette.muted-foreground",
+      "question": "Correction for palette.muted-foreground",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.muted-foreground"
+      ]
+    },
+    {
+      "id": "palette.secondary-foreground",
+      "question": "Correction for palette.secondary-foreground",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.secondary-foreground"
+      ]
+    },
+    {
+      "id": "palette.accent-foreground",
+      "question": "Correction for palette.accent-foreground",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.accent-foreground"
+      ]
+    },
+    {
+      "id": "palette.border",
+      "question": "Correction for palette.border",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.border"
+      ]
+    },
+    {
+      "id": "palette.blue-600",
+      "question": "Correction for palette.blue-600",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.blue-600"
+      ]
+    },
+    {
+      "id": "palette.blue-100",
+      "question": "Correction for palette.blue-100",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.blue-100"
+      ]
+    },
+    {
+      "id": "palette.blue-400",
+      "question": "Correction for palette.blue-400",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.blue-400"
+      ]
+    },
+    {
+      "id": "palette.blue-500",
+      "question": "Correction for palette.blue-500",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.blue-500"
+      ]
+    },
+    {
+      "id": "palette.blue-700",
+      "question": "Correction for palette.blue-700",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.blue-700"
+      ]
+    },
+    {
+      "id": "palette.red-100",
+      "question": "Correction for palette.red-100",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-100"
+      ]
+    },
+    {
+      "id": "palette.red-200",
+      "question": "Correction for palette.red-200",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-200"
+      ]
+    },
+    {
+      "id": "palette.red-300",
+      "question": "Correction for palette.red-300",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-300"
+      ]
+    },
+    {
+      "id": "palette.red-400",
+      "question": "Correction for palette.red-400",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-400"
+      ]
+    },
+    {
+      "id": "palette.red-500",
+      "question": "Correction for palette.red-500",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-500"
+      ]
+    },
+    {
+      "id": "palette.red-600",
+      "question": "Correction for palette.red-600",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.red-600"
+      ]
+    },
+    {
+      "id": "palette.green-100",
+      "question": "Correction for palette.green-100",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.green-100"
+      ]
+    },
+    {
+      "id": "palette.green-600",
+      "question": "Correction for palette.green-600",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.green-600"
+      ]
+    },
+    {
+      "id": "palette.zinc-100",
+      "question": "Correction for palette.zinc-100",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-100"
+      ]
+    },
+    {
+      "id": "palette.zinc-200",
+      "question": "Correction for palette.zinc-200",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-200"
+      ]
+    },
+    {
+      "id": "palette.zinc-300",
+      "question": "Correction for palette.zinc-300",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-300"
+      ]
+    },
+    {
+      "id": "palette.zinc-400",
+      "question": "Correction for palette.zinc-400",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-400"
+      ]
+    },
+    {
+      "id": "palette.zinc-500",
+      "question": "Correction for palette.zinc-500",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-500"
+      ]
+    },
+    {
+      "id": "palette.zinc-600",
+      "question": "Correction for palette.zinc-600",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-600"
+      ]
+    },
+    {
+      "id": "palette.zinc-700",
+      "question": "Correction for palette.zinc-700",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-700"
+      ]
+    },
+    {
+      "id": "palette.zinc-900",
+      "question": "Correction for palette.zinc-900",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.zinc-900"
+      ]
+    },
+    {
+      "id": "palette.neutral-50",
+      "question": "Correction for palette.neutral-50",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.neutral-50"
+      ]
+    },
+    {
+      "id": "palette.neutral-100",
+      "question": "Correction for palette.neutral-100",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.neutral-100"
+      ]
+    },
+    {
+      "id": "palette.neutral-200",
+      "question": "Correction for palette.neutral-200",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.neutral-200"
+      ]
+    },
+    {
+      "id": "palette.neutral-300",
+      "question": "Correction for palette.neutral-300",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.neutral-300"
+      ]
+    },
+    {
+      "id": "palette.neutral-500",
+      "question": "Correction for palette.neutral-500",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.neutral-500"
+      ]
+    },
+    {
+      "id": "palette.neutral-800",
+      "question": "Correction for palette.neutral-800",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.neutral-800"
+      ]
+    },
+    {
+      "id": "palette.gray-50",
+      "question": "Correction for palette.gray-50",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.gray-50"
+      ]
+    },
+    {
+      "id": "palette.gray-300",
+      "question": "Correction for palette.gray-300",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.gray-300"
+      ]
+    },
+    {
+      "id": "palette.gray-400",
+      "question": "Correction for palette.gray-400",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.gray-400"
+      ]
+    },
+    {
+      "id": "palette.gray-600",
+      "question": "Correction for palette.gray-600",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.gray-600"
+      ]
+    },
+    {
+      "id": "palette.gray-700",
+      "question": "Correction for palette.gray-700",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.gray-700"
+      ]
+    },
+    {
+      "id": "palette.gray-900",
+      "question": "Correction for palette.gray-900",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "palette.gray-900"
+      ]
+    },
+    {
+      "id": "type.display-1.px",
+      "question": "Correction for type.display-1.px",
+      "options": [],
+      "answer": 60,
+      "by": "person",
+      "appliesTo": [
+        "type.display-1.px"
+      ]
+    },
+    {
+      "id": "type.display-1.lineHeight",
+      "question": "Correction for type.display-1.lineHeight",
+      "options": [],
+      "answer": 1,
+      "by": "person",
+      "appliesTo": [
+        "type.display-1.lineHeight"
+      ]
+    },
+    {
+      "id": "type.display-1.tracking",
+      "question": "Correction for type.display-1.tracking",
+      "options": [],
+      "answer": "-0.03em",
+      "by": "person",
+      "appliesTo": [
+        "type.display-1.tracking"
+      ]
+    },
+    {
+      "id": "type.display-1.weight",
+      "question": "Correction for type.display-1.weight",
+      "options": [],
+      "answer": 700,
+      "by": "person",
+      "appliesTo": [
+        "type.display-1.weight"
+      ]
+    },
+    {
+      "id": "type.display-1.from",
+      "question": "Correction for type.display-1.from",
+      "options": [],
+      "answer": "classic/about hero h1 'About Us': text-4xl md:text-6xl font-bold, 60px/60px, -1.8px",
+      "by": "person",
+      "appliesTo": [
+        "type.display-1.from"
+      ]
+    },
+    {
+      "id": "type.heading-1.px",
+      "question": "Correction for type.heading-1.px",
+      "options": [],
+      "answer": 36,
+      "by": "person",
+      "appliesTo": [
+        "type.heading-1.px"
+      ]
+    },
+    {
+      "id": "type.heading-1.lineHeight",
+      "question": "Correction for type.heading-1.lineHeight",
+      "options": [],
+      "answer": 1.11,
+      "by": "person",
+      "appliesTo": [
+        "type.heading-1.lineHeight"
+      ]
+    },
+    {
+      "id": "type.heading-1.tracking",
+      "question": "Correction for type.heading-1.tracking",
+      "options": [],
+      "answer": "-0.03em",
+      "by": "person",
+      "appliesTo": [
+        "type.heading-1.tracking"
+      ]
+    },
+    {
+      "id": "type.heading-1.weight",
+      "question": "Correction for type.heading-1.weight",
+      "options": [],
+      "answer": 500,
+      "by": "person",
+      "appliesTo": [
+        "type.heading-1.weight"
+      ]
+    },
+    {
+      "id": "type.heading-1.family",
+      "question": "Correction for type.heading-1.family",
+      "options": [],
+      "answer": "sans",
+      "by": "person",
+      "appliesTo": [
+        "type.heading-1.family"
+      ]
+    },
+    {
+      "id": "type.heading-2.px",
+      "question": "Correction for type.heading-2.px",
+      "options": [],
+      "answer": 30,
+      "by": "person",
+      "appliesTo": [
+        "type.heading-2.px"
+      ]
+    },
+    {
+      "id": "type.heading-2.lineHeight",
+      "question": "Correction for type.heading-2.lineHeight",
+      "options": [],
+      "answer": 1.25,
+      "by": "person",
+      "appliesTo": [
+        "type.heading-2.lineHeight"
+      ]
+    },
+    {
+      "id": "type.heading-2.tracking",
+      "question": "Correction for type.heading-2.tracking",
+      "options": [],
+      "answer": "-0.03em",
+      "by": "person",
+      "appliesTo": [
+        "type.heading-2.tracking"
+      ]
+    },
+    {
+      "id": "type.heading-2.from",
+      "question": "Correction for type.heading-2.from",
+      "options": [],
+      "answer": "home scroll hero h2 (md:text-3xl font-bold leading-tight, 30px/37.5px, -0.9px) and the article h2 (30px/40px bold)",
+      "by": "person",
+      "appliesTo": [
+        "type.heading-2.from"
+      ]
+    },
+    {
+      "id": "type.lead.px",
+      "question": "Correction for type.lead.px",
+      "options": [],
+      "answer": 20,
+      "by": "person",
+      "appliesTo": [
+        "type.lead.px"
+      ]
+    },
+    {
+      "id": "type.lead.lineHeight",
+      "question": "Correction for type.lead.lineHeight",
+      "options": [],
+      "answer": 1.625,
+      "by": "person",
+      "appliesTo": [
+        "type.lead.lineHeight"
+      ]
+    },
+    {
+      "id": "type.lead.tracking",
+      "question": "Correction for type.lead.tracking",
+      "options": [],
+      "answer": "0",
+      "by": "person",
+      "appliesTo": [
+        "type.lead.tracking"
+      ]
+    },
+    {
+      "id": "type.lead.weight",
+      "question": "Correction for type.lead.weight",
+      "options": [],
+      "answer": 400,
+      "by": "person",
+      "appliesTo": [
+        "type.lead.weight"
+      ]
+    },
+    {
+      "id": "type.lead.family",
+      "question": "Correction for type.lead.family",
+      "options": [],
+      "answer": "sans",
+      "by": "person",
+      "appliesTo": [
+        "type.lead.family"
+      ]
+    },
+    {
+      "id": "type.eyebrow.px",
+      "question": "Correction for type.eyebrow.px",
+      "options": [],
+      "answer": 12,
+      "by": "person",
+      "appliesTo": [
+        "type.eyebrow.px"
+      ]
+    },
+    {
+      "id": "type.eyebrow.lineHeight",
+      "question": "Correction for type.eyebrow.lineHeight",
+      "options": [],
+      "answer": 1.33,
+      "by": "person",
+      "appliesTo": [
+        "type.eyebrow.lineHeight"
+      ]
+    },
+    {
+      "id": "type.eyebrow.tracking",
+      "question": "Correction for type.eyebrow.tracking",
+      "options": [],
+      "answer": "0.05em",
+      "by": "person",
+      "appliesTo": [
+        "type.eyebrow.tracking"
+      ]
+    },
+    {
+      "id": "type.eyebrow.weight",
+      "question": "Correction for type.eyebrow.weight",
+      "options": [],
+      "answer": 500,
+      "by": "person",
+      "appliesTo": [
+        "type.eyebrow.weight"
+      ]
+    },
+    {
+      "id": "type.eyebrow.family",
+      "question": "Correction for type.eyebrow.family",
+      "options": [],
+      "answer": "sans",
+      "by": "person",
+      "appliesTo": [
+        "type.eyebrow.family"
+      ]
+    },
+    {
+      "id": "type.button.px",
+      "question": "Correction for type.button.px",
+      "options": [],
+      "answer": 16,
+      "by": "person",
+      "appliesTo": [
+        "type.button.px"
+      ]
+    },
+    {
+      "id": "type.button.weight",
+      "question": "Correction for type.button.weight",
+      "options": [],
+      "answer": 500,
+      "by": "person",
+      "appliesTo": [
+        "type.button.weight"
+      ]
+    },
+    {
+      "id": "type.button.from",
+      "question": "Correction for type.button.from",
+      "options": [],
+      "answer": "contact form submit: rounded-full px-8 py-3 text-base font-medium bg-primary text-white",
+      "by": "person",
+      "appliesTo": [
+        "type.button.from"
+      ]
+    },
+    {
+      "id": "type.small.from",
+      "question": "Correction for type.small.from",
+      "options": [],
+      "answer": "footer and card meta: text-sm 14px/20px",
+      "by": "person",
+      "appliesTo": [
+        "type.small.from"
+      ]
+    },
+    {
+      "id": "fonts.sans.family",
+      "question": "Correction for fonts.sans.family",
+      "options": [],
+      "answer": "Benton Sans",
+      "by": "person",
+      "appliesTo": [
+        "fonts.sans.family"
+      ]
+    },
+    {
+      "id": "fonts.sans.stack",
+      "question": "Correction for fonts.sans.stack",
+      "options": [],
+      "answer": "Benton Sans, BentonSans, Libre Franklin, system-ui, sans-serif",
+      "by": "person",
+      "appliesTo": [
+        "fonts.sans.stack"
+      ]
+    },
+    {
+      "id": "fonts.mono.family",
+      "question": "Correction for fonts.mono.family",
+      "options": [],
+      "answer": "JetBrains Mono",
+      "by": "person",
+      "appliesTo": [
+        "fonts.mono.family"
+      ]
+    },
+    {
+      "id": "controls.button-height.px",
+      "question": "Correction for controls.button-height.px",
+      "options": [],
+      "answer": 48,
+      "by": "person",
+      "appliesTo": [
+        "controls.button-height.px"
+      ]
+    },
+    {
+      "id": "controls.button-height.from",
+      "question": "Correction for controls.button-height.from",
+      "options": [],
+      "answer": "contact form submit (py-3, 48px) and the article 'Let's talk' button (px-6 py-3, 48px)",
+      "by": "person",
+      "appliesTo": [
+        "controls.button-height.from"
+      ]
+    },
+    {
+      "id": "controls.button-pad-x.px",
+      "question": "Correction for controls.button-pad-x.px",
+      "options": [],
+      "answer": 32,
+      "by": "person",
+      "appliesTo": [
+        "controls.button-pad-x.px"
+      ]
+    },
+    {
+      "id": "controls.button-pad-x.from",
+      "question": "Correction for controls.button-pad-x.from",
+      "options": [],
+      "answer": "contact form submit px-8",
+      "by": "person",
+      "appliesTo": [
+        "controls.button-pad-x.from"
+      ]
+    },
+    {
+      "id": "controls.input-height.px",
+      "question": "Correction for controls.input-height.px",
+      "options": [],
+      "answer": 48,
+      "by": "person",
+      "appliesTo": [
+        "controls.input-height.px"
+      ]
+    },
+    {
+      "id": "controls.input-height.from",
+      "question": "Correction for controls.input-height.from",
+      "options": [],
+      "answer": "contact form inputs (py-3 + 16px text = 48px inside a 1px border) and the chat pill input (md:h-12)",
+      "by": "person",
+      "appliesTo": [
+        "controls.input-height.from"
+      ]
+    },
+    {
+      "id": "controls.avatar",
+      "question": "Correction for controls.avatar",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "controls.avatar"
+      ]
+    },
+    {
+      "id": "radius.controls.px",
+      "question": "Correction for radius.controls.px",
+      "options": [],
+      "answer": 8,
+      "by": "person",
+      "appliesTo": [
+        "radius.controls.px"
+      ]
+    },
+    {
+      "id": "radius.controls.from",
+      "question": "Correction for radius.controls.from",
+      "options": [],
+      "answer": "the site's shadcn controls: rounded-md (8px) on the mode tabs and the 'See More Results' button; the site's own --radius: .625rem ladder (6/8/10/14). The pill (rounded-full) primary action and chat input are a brand rule in the brief, not the controls radius: a 9999px controls radius moves the whole numeric ladder to the pill base (14/16/18/22/26) and rounds every card to 22px",
+      "by": "person",
+      "appliesTo": [
+        "radius.controls.from"
+      ]
+    },
+    {
+      "id": "radius.inputs.px",
+      "question": "Correction for radius.inputs.px",
+      "options": [],
+      "answer": 10,
+      "by": "person",
+      "appliesTo": [
+        "radius.inputs.px"
+      ]
+    },
+    {
+      "id": "radius.inputs.from",
+      "question": "Correction for radius.inputs.from",
+      "options": [],
+      "answer": "contact form inputs and textarea: rounded-lg (10px; the site's --radius: .625rem)",
+      "by": "person",
+      "appliesTo": [
+        "radius.inputs.from"
+      ]
+    },
+    {
+      "id": "radius.avatars",
+      "question": "Correction for radius.avatars",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "radius.avatars"
+      ]
+    },
+    {
+      "id": "spacing.band.px",
+      "question": "Correction for spacing.band.px",
+      "options": [],
+      "answer": 100,
+      "by": "person",
+      "appliesTo": [
+        "spacing.band.px"
+      ]
+    },
+    {
+      "id": "spacing.grid.px",
+      "question": "Correction for spacing.grid.px",
+      "options": [],
+      "answer": 24,
+      "by": "person",
+      "appliesTo": [
+        "spacing.grid.px"
+      ]
+    },
+    {
+      "id": "spacing.stack.px",
+      "question": "Correction for spacing.stack.px",
+      "options": [],
+      "answer": 40,
+      "by": "person",
+      "appliesTo": [
+        "spacing.stack.px"
+      ]
+    },
+    {
+      "id": "colors.light.text-secondary.value",
+      "question": "Correction for colors.light.text-secondary.value",
+      "options": [],
+      "answer": "#525252",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.text-secondary.value"
+      ]
+    },
+    {
+      "id": "colors.light.text-secondary.from",
+      "question": "Correction for colors.light.text-secondary.from",
+      "options": [],
+      "answer": "IA's long-form secondary text: the About page paragraphs, text-neutral-600 (#525252). The home card descriptions' gray-500 #6a7282 reads 4.39:1 on IA's grey card and stays in the palette (--palette-gray-500)",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.text-secondary.from"
+      ]
+    },
+    {
+      "id": "colors.light.chart-1",
+      "question": "Correction for colors.light.chart-1",
+      "options": [],
+      "answer": "#176cd9",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.chart-1"
+      ]
+    },
+    {
+      "id": "colors.light.chart-2",
+      "question": "Correction for colors.light.chart-2",
+      "options": [],
+      "answer": "#000000",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.chart-2"
+      ]
+    },
+    {
+      "id": "colors.light.chart-3",
+      "question": "Correction for colors.light.chart-3",
+      "options": [],
+      "answer": "#6a7282",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.chart-3"
+      ]
+    },
+    {
+      "id": "colors.light.chart-4",
+      "question": "Correction for colors.light.chart-4",
+      "options": [],
+      "answer": "#144e9c",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.chart-4"
+      ]
+    },
+    {
+      "id": "colors.light.chart-5",
+      "question": "Correction for colors.light.chart-5",
+      "options": [],
+      "answer": "__skip__",
+      "by": "person",
+      "appliesTo": [
+        "colors.light.chart-5"
+      ]
+    },
+    {
+      "id": "colors.dark.ink-heading",
+      "question": "Correction for colors.dark.ink-heading",
+      "options": [],
+      "answer": "#f9f9f9",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.ink-heading"
+      ]
+    },
+    {
+      "id": "colors.dark.ink-display",
+      "question": "Correction for colors.dark.ink-display",
+      "options": [],
+      "answer": "#f9f9f9",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.ink-display"
+      ]
+    },
+    {
+      "id": "colors.dark.inverse-surface",
+      "question": "Correction for colors.dark.inverse-surface",
+      "options": [],
+      "answer": "#f9f9f9",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.inverse-surface"
+      ]
+    },
+    {
+      "id": "colors.dark.inverse-foreground",
+      "question": "Correction for colors.dark.inverse-foreground",
+      "options": [],
+      "answer": "#0a0a0a",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.inverse-foreground"
+      ]
+    },
+    {
+      "id": "colors.dark.primary-hover",
+      "question": "Correction for colors.dark.primary-hover",
+      "options": [],
+      "answer": "#2474e0",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.primary-hover"
+      ]
+    },
+    {
+      "id": "colors.dark.chart-1",
+      "question": "Correction for colors.dark.chart-1",
+      "options": [],
+      "answer": "#78adf9",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.chart-1"
+      ]
+    },
+    {
+      "id": "colors.dark.chart-2",
+      "question": "Correction for colors.dark.chart-2",
+      "options": [],
+      "answer": "#f9f9f9",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.chart-2"
+      ]
+    },
+    {
+      "id": "colors.dark.chart-3",
+      "question": "Correction for colors.dark.chart-3",
+      "options": [],
+      "answer": "#ababab",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.chart-3"
+      ]
+    },
+    {
+      "id": "colors.dark.chart-4",
+      "question": "Correction for colors.dark.chart-4",
+      "options": [],
+      "answer": "#2169cc",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.chart-4"
+      ]
+    },
+    {
+      "id": "colors.dark.chart-5",
+      "question": "Correction for colors.dark.chart-5",
+      "options": [],
+      "answer": "#8a8a8a",
+      "by": "person",
+      "appliesTo": [
+        "colors.dark.chart-5"
+      ]
+    }
+  ],
+  "disagreements": [],
+  "excluded": [],
+  "changes": [
+    {
+      "path": "fonts.mono",
+      "to": "JetBrains Mono (free, loads as itself)",
+      "why": "the reader saw no mono text because the Machine view is hidden; answer cannot attach a stand-in (plugin 0.5.0)",
+      "by": "hand",
+      "at": "2026-10-08T00:10:08.919Z"
+    },
+    {
+      "path": "fonts.sans.standIn.weights",
+      "from": [
+        400,
+        500,
+        700
+      ],
+      "to": [
+        300,
+        400,
+        500,
+        700
+      ],
+      "why": "IA paints Benton Sans Light (300); the stand-in must load 300 too",
+      "by": "hand",
+      "at": "2026-10-08T00:10:08.919Z"
+    },
+    {
+      "path": "type.heading-1.px",
+      "from": 36,
+      "to": 48,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-1.lineHeight",
+      "from": 1.11,
+      "to": 1.15,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-1.tracking",
+      "from": "-0.03em",
+      "to": "-0.025em",
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-1.weight",
+      "from": 500,
+      "to": 700,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-2.px",
+      "from": 30,
+      "to": 36,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-2.lineHeight",
+      "from": 1.25,
+      "to": 1.11,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-2.tracking",
+      "from": "-0.03em",
+      "to": "-0.03em",
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-2.weight",
+      "from": 700,
+      "to": 500,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-3.px",
+      "from": 24,
+      "to": 30,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-3.lineHeight",
+      "from": 1.33,
+      "to": 1.25,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-3.tracking",
+      "from": "-0.03em",
+      "to": "-0.03em",
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.heading-3.weight",
+      "from": 700,
+      "to": 700,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T00:26:45.970Z"
+    },
+    {
+      "path": "type.display-1.tracking",
+      "from": "-0.03em",
+      "to": "-0.015em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T00:28:55.003Z"
+    },
+    {
+      "path": "type.heading-1.tracking",
+      "from": "-0.025em",
+      "to": "-0.01em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T00:28:55.003Z"
+    },
+    {
+      "path": "type.heading-2.tracking",
+      "from": "-0.03em",
+      "to": "-0.02em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T00:28:55.003Z"
+    },
+    {
+      "path": "type.heading-3.tracking",
+      "from": "-0.03em",
+      "to": "-0.015em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T00:28:55.003Z"
+    },
+    {
+      "path": "type.heading-1.px",
+      "from": 36,
+      "to": 48,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-1.lineHeight",
+      "from": 1.11,
+      "to": 1.15,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-1.tracking",
+      "from": "-0.03em",
+      "to": "-0.025em",
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-1.weight",
+      "from": 500,
+      "to": 700,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-2.px",
+      "from": 30,
+      "to": 36,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-2.lineHeight",
+      "from": 1.25,
+      "to": 1.11,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-2.tracking",
+      "from": "-0.03em",
+      "to": "-0.03em",
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-2.weight",
+      "from": 700,
+      "to": 500,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-3.px",
+      "from": 30,
+      "to": 30,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-3.lineHeight",
+      "from": 1.25,
+      "to": 1.25,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-3.tracking",
+      "from": "-0.015em",
+      "to": "-0.03em",
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.heading-3.weight",
+      "from": 700,
+      "to": 700,
+      "why": "IA's heading ladder across nine pages is 60/48/36/30/24/20: page titles on white are 48px bold (Insights, Results, every article, Get in touch), section headings 36px medium (home, Insights), sub-sections 30px bold (article h2, Results, Careers, Services). The twins of the article and the About row could not reach 48 or a 36px statement.",
+      "at": "2026-10-08T01:10:25.222Z"
+    },
+    {
+      "path": "type.display-1.tracking",
+      "from": "-0.03em",
+      "to": "-0.015em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T01:10:25.363Z"
+    },
+    {
+      "path": "type.heading-1.tracking",
+      "from": "-0.025em",
+      "to": "-0.01em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T01:10:25.363Z"
+    },
+    {
+      "path": "type.heading-2.tracking",
+      "from": "-0.03em",
+      "to": "-0.02em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T01:10:25.363Z"
+    },
+    {
+      "path": "type.heading-3.tracking",
+      "from": "-0.03em",
+      "to": "-0.015em",
+      "why": "Libre Franklin, the free face that renders wherever Benton Sans is not installed, sets 3.3% narrower than Benton Sans at 700 and 2.4% narrower at 500 (measured on IA's own woff2 in the browser pane). IA's exact tracking (-0.025 to -0.03em) makes the stand-in's bold headings look cramped in the twins; +0.015em at 700 and +0.01em at 500 restores IA's set width. Where Benton Sans is installed the headings are 0.01-0.015em looser than the site.",
+      "at": "2026-10-08T01:10:25.363Z"
+    },
+    {
+      "path": "type.display-1.weight",
+      "from": 700,
+      "to": 600,
+      "why": "IA's site loads Benton Sans only at 300, 400, 500 and 700, and its own CSS asks for 600 on page titles and article questions; with no 600 file the browser renders Benton Bold. Setting IA's bold steps to 600 therefore changes nothing where Benton Sans is installed, while Libre Franklin, the free stand-in, renders a true SemiBold. Two independent judges read Libre Franklin 700 at display sizes as Black/ExtraBold beside IA's Benton Bold; 600 matches Benton Bold's colour.",
+      "at": "2026-10-08T03:25:42.086Z"
+    },
+    {
+      "path": "type.heading-1.weight",
+      "from": 700,
+      "to": 600,
+      "why": "IA's site loads Benton Sans only at 300, 400, 500 and 700, and its own CSS asks for 600 on page titles and article questions; with no 600 file the browser renders Benton Bold. Setting IA's bold steps to 600 therefore changes nothing where Benton Sans is installed, while Libre Franklin, the free stand-in, renders a true SemiBold. Two independent judges read Libre Franklin 700 at display sizes as Black/ExtraBold beside IA's Benton Bold; 600 matches Benton Bold's colour.",
+      "at": "2026-10-08T03:25:42.086Z"
+    },
+    {
+      "path": "type.heading-3.weight",
+      "from": 700,
+      "to": 600,
+      "why": "IA's site loads Benton Sans only at 300, 400, 500 and 700, and its own CSS asks for 600 on page titles and article questions; with no 600 file the browser renders Benton Bold. Setting IA's bold steps to 600 therefore changes nothing where Benton Sans is installed, while Libre Franklin, the free stand-in, renders a true SemiBold. Two independent judges read Libre Franklin 700 at display sizes as Black/ExtraBold beside IA's Benton Bold; 600 matches Benton Bold's colour.",
+      "at": "2026-10-08T03:25:42.086Z"
+    },
+    {
+      "path": "fonts.mono",
+      "to": "JetBrains Mono (free, loads as itself)",
+      "why": "the reader saw no mono text because the Machine view is hidden; answer cannot attach a stand-in (plugin 0.5.0)",
+      "by": "hand",
+      "at": "2026-10-08T04:06:41.736Z"
+    },
+    {
+      "path": "fonts.sans.standIn.weights",
+      "from": [
+        300,
+        400,
+        500,
+        700
+      ],
+      "to": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ],
+      "why": "IA paints Benton Sans Light (300), and its bold steps are 600 (rendered as Benton Bold); the stand-in must load 300 and 600 too",
+      "by": "hand",
+      "at": "2026-10-08T04:06:41.736Z"
+    }
+  ]
+}

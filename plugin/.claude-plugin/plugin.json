@@ -1,0 +1,14 @@
+{
+  "name": "ia-design",
+  "version": "1.0.0",
+  "description": "IA Collaborative's design system for Claude: publishes IA's Design System page, and sets up code projects with a gate that keeps Claude on brand.",
+  "author": {
+    "name": "IA Collaborative"
+  },
+  "repository": "https://github.com/datadrifer/ia-collaborative-kit",
+  "keywords": [
+    "design-system",
+    "brand",
+    "ia-collaborative"
+  ]
+}

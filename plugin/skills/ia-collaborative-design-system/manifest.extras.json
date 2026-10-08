@@ -1,0 +1,25 @@
+{
+  "$note": "files beside the packager manifest: the plain-CSS export, the lock, the spec and the component note",
+  "files": {
+    "root.css": {
+      "sha256": "d244b8034f630ff69c5670be4a99a8164c9af732c22937117408420946ca18f7",
+      "bytes": 21335
+    },
+    "substrate.lock.json": {
+      "sha256": "abb20b86f325bddbc4ef593ae7812350e86ae4c5a88dc62866762867fc9b1a3d",
+      "bytes": 1869
+    },
+    "substrate.spec.json": {
+      "sha256": "34c5d0dea229d7c1ce1a65b72f0fd26efd0038cd3f43df1f0850364a144cc5aa",
+      "bytes": 94656
+    },
+    "components.md": {
+      "sha256": "437b8ebe4f275b976d9f3cfbed3fbc4f8d43a23814d77259bc29a707142000ff",
+      "bytes": 1455
+    },
+    "gate/config.json": {
+      "sha256": "12e0cdda4ce1e3a088d17a9dd324af99ab6fea321f0064f85e3055bb73882bdd",
+      "bytes": 32
+    }
+  }
+}

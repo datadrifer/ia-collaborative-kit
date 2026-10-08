@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>Select</title>
+</head>
+<body>
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'grid max-w-sm gap-inset-xs'}, h(Label,{className:'text-micro uppercase text-ink-eyebrow'},'Service'), h(Select,{defaultValue:'ai',open:true,onOpenChange:function(){}}, h(SelectTrigger,{className:'w-full'}, h(SelectValue,null)), h(SelectContent,null, h(SelectGroup,null, h(SelectLabel,null,'We deliver'), h(SelectItem,{value:'bi'},'Behavioral Insight & Intent Intelligence'), h(SelectItem,{value:'ai'},'Enterprise Data & AI Strategy'), h(SelectItem,{value:'xp'},'Experience and Product'), h(SelectItem,{value:'om'},'Operating Model Transformation'))))))
+  }
+})()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>Site footer</title>
+</head>
+<body>
+<div data-theme="light" class="min-h-screen bg-background p-inset-lg font-sans text-foreground">
+<div class="">
+  <footer class="site-footer">
+    <p class="site-footer-line">IA Collaborative Holdings, LLC. All rights reserved.</p>
+    <nav class="site-footer-links">
+      <a class="site-footer-link" href="#">Privacy Policy</a>
+      <a class="site-footer-link" href="#">Cookie Settings</a>
+    </nav>
+  </footer>
+</div>
+</div>
+
+</body>
+</html>

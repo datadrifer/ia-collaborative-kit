@@ -1,0 +1,38 @@
+{
+  "$format": "substrate.lock/1",
+  "$note": "A locked Substrate design system — pipeline stage 8. `substrate` is the token layer's shape, `params` the seed/parameter identity, `overrides` the exceptions granted against it. `hashes` is a canonical-text digest per file under packages/tokens/src/; run `node packages/tokens/build.mjs --check` to verify the working tree still matches. A parameter change bumps `params` and re-emits; an override-only change bumps `overrides`.",
+  "substrate": "1.0.0",
+  "params": "1.0.0",
+  "overrides": "1.0.0",
+  "hashes": {
+    "ramps.json": "1314c1ee12d4fd10608674e804d2c261ac1f471fc914970a60834ff8dd51096a",
+    "primitive.tokens.json": "3e78b69fe2496bb62f42071e697b637e0bb7fd8db960280a70236ccbed8fed9f",
+    "semantic.tokens.json": "692e75ed7da266fa5cbd4c9abad90a492a227db2b055e5f89542fb34edd46a24",
+    "semantic-dark.tokens.json": "a262e4d51c6a97e8248622ece08e915ae22fe35f674b755eae33817529fb6b2d",
+    "density-compact.tokens.json": "5ad688e65ec208005b1eb8cb99a768007b17e8d4e84d62cbac0f280e662bbc05",
+    "density-relaxed.tokens.json": "b6e8da6b1f126f3739683c2ed74bf0699e206d359b229b9eabc5e9cd6a790e79",
+    "deck.tokens.json": "b7c483bd5b7a1dbb77db00cbb96d3e5bf8d8ea95dc6df9354ec46e05ca54c39b",
+    "contrast.json": "d5d1e2b21e3e1532ca9535c362b9a3563351726a3b4296d8685ddfb5295f060b"
+  },
+  "provenance": {
+    "exact": 55,
+    "rule": 273,
+    "default": 0,
+    "unhonoured": 4,
+    "sha256": "bd2a44dc5c41157f38ee722835326830e60efda8240e37b79c4545d0786bfa59"
+  },
+  "measurementId": null,
+  "overrideRecords": [],
+  "lockedAt": "2026-10-08T04:21:22.152Z",
+  "elements": {
+    "sha256": "56b0cd8464902a54a16652dac85349c5da57480c030a8adf99c78c44b3bac3d5",
+    "count": 16
+  },
+  "design": {
+    "models": {
+      "brief": "claude-fable-5-1",
+      "recipes": "claude-fable-5-1",
+      "twins": "claude-fable-5-1"
+    }
+  }
+}

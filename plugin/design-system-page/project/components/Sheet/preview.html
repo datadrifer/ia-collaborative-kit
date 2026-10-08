@@ -1,0 +1,11 @@
+<!-- @dsCard group="Overlays" height=360 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(Sheet,{defaultOpen:true}, h(SheetTrigger,{className:buttonVariants({variant:'outline'})},'Menu'), h(SheetContent,{side:'right'}, h(SheetHeader,null, h(SheetTitle,null,'IA Collaborative'), h(SheetDescription,null,'Human-centered solutions for industry leaders.')), h('nav',{className:'flex flex-col gap-inset-sm px-inset-lg text-lead'}, ...['Tech & AI','Services','Results','Insights','About Us','Careers','Contact'].map((t)=>h('a',{key:t,href:'#'},t))))))
+  }
+})()
+</script>

@@ -1,0 +1,284 @@
+{
+  "v": 3,
+  "layout": "files",
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-08T01:27:58Z"
+  },
+  "title": "IA Collaborative",
+  "namespace": "IACollaborative",
+  "libraries": [
+    {
+      "name": "react",
+      "version": "18"
+    },
+    {
+      "name": "react-dom",
+      "version": "18"
+    }
+  ],
+  "sections": {},
+  "groups": [
+    "Logos",
+    "Brand elements",
+    "Photography",
+    "Icons",
+    "Exports"
+  ],
+  "assetGroups": {
+    "Logos": {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "ia-logo.svg",
+        "ia-logo-white.svg",
+        "ia-monogram.svg",
+        "ia-monogram-white.svg"
+      ],
+      "files": {
+        "ia-logo.svg": {
+          "name": "ia-logo.svg",
+          "blob": "969fe5215cee723744ec0a643a4410d0",
+          "size": 5720,
+          "type": "image/svg+xml"
+        },
+        "ia-logo-white.svg": {
+          "name": "ia-logo-white.svg",
+          "blob": "5e610245ad05beae9cc8790ce913387c",
+          "size": 5763,
+          "type": "image/svg+xml"
+        },
+        "ia-monogram.svg": {
+          "name": "ia-monogram.svg",
+          "blob": "d34c35ea108dc58cf90aa400597f109b",
+          "size": 549,
+          "type": "image/svg+xml"
+        },
+        "ia-monogram-white.svg": {
+          "name": "ia-monogram-white.svg",
+          "blob": "75f439213fb8e798908b268b7568ba21",
+          "size": 560,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Brand elements": {
+      "name": "Brand elements",
+      "tile": "l",
+      "order": [
+        "ia-asterisk.svg",
+        "ia-insight-to-action.svg",
+        "ia-insight-to-action-black.svg",
+        "ia-blue-field-1.png",
+        "ia-blue-field-2.jpg"
+      ],
+      "files": {
+        "ia-asterisk.svg": {
+          "name": "ia-asterisk.svg",
+          "blob": "099a11ba9a001cdfb3da0eb02e196e20",
+          "size": 400,
+          "type": "image/svg+xml"
+        },
+        "ia-insight-to-action.svg": {
+          "name": "ia-insight-to-action.svg",
+          "blob": "b06f2be7bd26b4d1d3368838747a346f",
+          "size": 4596,
+          "type": "image/svg+xml"
+        },
+        "ia-insight-to-action-black.svg": {
+          "name": "ia-insight-to-action-black.svg",
+          "blob": "f55616718f2d8e929232717beb1dc984",
+          "size": 4604,
+          "type": "image/svg+xml"
+        },
+        "ia-blue-field-1.png": {
+          "name": "ia-blue-field-1.png",
+          "blob": "22feb044e57955f567e0586f26a53f19",
+          "size": 341490,
+          "type": "image/png"
+        },
+        "ia-blue-field-2.jpg": {
+          "name": "ia-blue-field-2.jpg",
+          "blob": "141e99ac74b7b335471e7b9bab65a68b",
+          "size": 100493,
+          "type": "image/jpeg"
+        }
+      }
+    },
+    "Icons": {
+      "name": "Icons",
+      "tile": "s",
+      "order": [
+        "chevron-right-blue.svg",
+        "chevron-right.svg",
+        "chevron-left.svg",
+        "arrow-up.svg",
+        "plus.svg",
+        "pause.svg"
+      ],
+      "files": {
+        "chevron-right-blue.svg": {
+          "name": "chevron-right-blue.svg",
+          "blob": "0c15712ee037adbd61620e91c1436b6d",
+          "size": 251,
+          "type": "image/svg+xml"
+        },
+        "chevron-right.svg": {
+          "name": "chevron-right.svg",
+          "blob": "efa9ed3ef08520ece1a94aa245ec794d",
+          "size": 241,
+          "type": "image/svg+xml"
+        },
+        "chevron-left.svg": {
+          "name": "chevron-left.svg",
+          "blob": "39d28fe8713bc70f200dd97beed95954",
+          "size": 241,
+          "type": "image/svg+xml"
+        },
+        "arrow-up.svg": {
+          "name": "arrow-up.svg",
+          "blob": "09585b7ba37116579443b8e8d8f5b44f",
+          "size": 262,
+          "type": "image/svg+xml"
+        },
+        "plus.svg": {
+          "name": "plus.svg",
+          "blob": "9d75a6b98f0bb0de5152e5aa5b92e6bd",
+          "size": 253,
+          "type": "image/svg+xml"
+        },
+        "pause.svg": {
+          "name": "pause.svg",
+          "blob": "441c060a607925415f0def5c70e1136d",
+          "size": 311,
+          "type": "image/svg+xml"
+        }
+      }
+    },
+    "Exports": {
+      "name": "Exports",
+      "tile": "m",
+      "order": [
+        "ia-collaborative-style-guide-1.0.0.pdf",
+        "DESIGN.md",
+        "light.tokens.json",
+        "dark.tokens.json",
+        "base.tokens.json",
+        "ia-collaborative-design-system.resolver.json",
+        "shadcn-ia-collaborative-design-system.json"
+      ],
+      "files": {
+        "ia-collaborative-style-guide-1.0.0.pdf": {
+          "name": "ia-collaborative-style-guide-1.0.0.pdf",
+          "blob": "b3822e5ca447eb926bbc4af352d94da3",
+          "size": 337668,
+          "type": "application/pdf"
+        },
+        "DESIGN.md": {
+          "name": "DESIGN.md",
+          "blob": "fa69c176be6bb2f27b6cd74786a7251b",
+          "size": 28378,
+          "type": "text/markdown"
+        },
+        "light.tokens.json": {
+          "name": "light.tokens.json",
+          "blob": "41e8b7ecbb7d222c38f1e35721ed2f1f",
+          "size": 22357,
+          "type": "application/json"
+        },
+        "dark.tokens.json": {
+          "name": "dark.tokens.json",
+          "blob": "4fb824d70f95228357ad161c9076624a",
+          "size": 24997,
+          "type": "application/json"
+        },
+        "base.tokens.json": {
+          "name": "base.tokens.json",
+          "blob": "9dd1a6ec6a9c7e3f9f10c8749c4a7391",
+          "size": 51980,
+          "type": "application/json"
+        },
+        "ia-collaborative-design-system.resolver.json": {
+          "name": "ia-collaborative-design-system.resolver.json",
+          "blob": "8500d70bee1526c64b7e7899b1bd1e8e",
+          "size": 732,
+          "type": "application/json"
+        },
+        "shadcn-ia-collaborative-design-system.json": {
+          "name": "shadcn-ia-collaborative-design-system.json",
+          "blob": "6f274d0c5132dafb46660fc6cf4c609e",
+          "size": 50731,
+          "type": "application/json"
+        }
+      }
+    },
+    "Photography": {
+      "name": "Photography",
+      "tile": "l",
+      "order": [
+        "ia-studio-open-plan.jpg",
+        "ia-studio-team-at-work.jpg",
+        "ia-studio-glass-room.jpg",
+        "ia-studio-model-shop.jpg",
+        "ia-work-synthesis-wall.jpg",
+        "ia-work-side-by-side.jpg",
+        "ia-work-research-review.jpg"
+      ],
+      "files": {
+        "ia-studio-open-plan.jpg": {
+          "name": "ia-studio-open-plan.jpg",
+          "blob": "68ffbbd23c554f6a4199a3487fa2ad14",
+          "size": 316767,
+          "type": "image/jpeg"
+        },
+        "ia-studio-team-at-work.jpg": {
+          "name": "ia-studio-team-at-work.jpg",
+          "blob": "9b62e540f89115663964a71c27b3ed73",
+          "size": 455456,
+          "type": "image/jpeg"
+        },
+        "ia-studio-glass-room.jpg": {
+          "name": "ia-studio-glass-room.jpg",
+          "blob": "1ac38f21d9cb05e83564aa529cdcee41",
+          "size": 421647,
+          "type": "image/jpeg"
+        },
+        "ia-studio-model-shop.jpg": {
+          "name": "ia-studio-model-shop.jpg",
+          "blob": "20646a20b50e7eb1320a540ac0fc52f0",
+          "size": 431720,
+          "type": "image/jpeg"
+        },
+        "ia-work-synthesis-wall.jpg": {
+          "name": "ia-work-synthesis-wall.jpg",
+          "blob": "064914fc863b8174d32d2a6d90f2e237",
+          "size": 93099,
+          "type": "image/jpeg"
+        },
+        "ia-work-side-by-side.jpg": {
+          "name": "ia-work-side-by-side.jpg",
+          "blob": "5b39ff47c3df2093eebd7de47b9892f3",
+          "size": 193584,
+          "type": "image/jpeg"
+        },
+        "ia-work-research-review.jpg": {
+          "name": "ia-work-research-review.jpg",
+          "blob": "6c0d83468b347ee5970a095ba22a5d75",
+          "size": 157115,
+          "type": "image/jpeg"
+        }
+      }
+    }
+  },
+  "blobs": {},
+  "docs": {
+    "readme": "project/README.md",
+    "sections": []
+  },
+  "lastChange": {
+    "by": "Ahmed",
+    "at": "2026-10-08T04:57:48Z",
+    "via": "Claude Code",
+    "note": "IA Collaborative 1.0.0: the photo scrim holds at least 60% under white type (one-pager hero and template card)"
+  }
+}

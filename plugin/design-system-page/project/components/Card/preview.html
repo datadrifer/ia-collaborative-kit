@@ -1,0 +1,11 @@
+<!-- @dsCard group="Display" height=320 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(Card,{className:'max-w-sm'}, h(CardHeader,null, h(CardTitle,null,'The IDEALS Model'), h(CardDescription,null,'Six elements that can make or break your custom AI implementation.'), h(CardAction,null, h(Button,{size:'sm',variant:'outline'},'Save'))), h(CardContent,null,'Intelligence, Data, Experience, Autonomy, Learning and Security.'), h(CardFooter,null, h(Button,{variant:'link'},'Read the insight'))))
+  }
+})()
+</script>

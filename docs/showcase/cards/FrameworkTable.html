@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>Framework table</title>
+</head>
+<body>
+<div data-theme="light" class="min-h-screen bg-background p-inset-lg font-sans text-foreground">
+<div class="max-w-3xl">
+  <div class="framework-table">
+    <p class="framework-table-label">IDEALS framework</p>
+    <div class="framework-table-row">
+      <h3 class="framework-table-name"><span class="framework-table-initial">I</span><span>ntelligence</span></h3>
+      <p class="framework-table-question"><span>What </span><span class="framework-table-key">model, algorithm + context</span><span> will we engineer?</span></p>
+    </div>
+    <div class="framework-table-row">
+      <h3 class="framework-table-name"><span class="framework-table-initial">D</span><span>ata</span></h3>
+      <p class="framework-table-question"><span>What </span><span class="framework-table-key">data sources + integrations</span><span> will unlock insight?</span></p>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

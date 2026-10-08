@@ -1,0 +1,11 @@
+<!-- @dsCard group="Forms" height=190 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'grid max-w-sm gap-inset-xs'}, h(Label,{htmlFor:'n',className:'text-micro uppercase text-ink-eyebrow'},'Name'), h(Input,{id:'n',placeholder:'Your name'}), h(Label,{htmlFor:'e',className:'text-micro uppercase text-ink-eyebrow'},'Email'), h(Input,{id:'e',type:'email',defaultValue:'jordan@company',"aria-invalid":true}), h('p',{className:'text-small text-destructive'},'Enter an email address like you@company.com.')))
+  }
+})()
+</script>

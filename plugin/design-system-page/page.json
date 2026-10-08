@@ -1,0 +1,210 @@
+{
+  "title": "IA Collaborative",
+  "version": "1.0.0",
+  "snapshotAt": "2026-10-08T11:53:35.948Z",
+  "assets": [
+    {
+      "group": "Logos",
+      "name": "ia-logo.svg",
+      "type": "image/svg+xml",
+      "size": 5720,
+      "blob": "969fe5215cee723744ec0a643a4410d0"
+    },
+    {
+      "group": "Logos",
+      "name": "ia-logo-white.svg",
+      "type": "image/svg+xml",
+      "size": 5763,
+      "blob": "5e610245ad05beae9cc8790ce913387c"
+    },
+    {
+      "group": "Logos",
+      "name": "ia-monogram.svg",
+      "type": "image/svg+xml",
+      "size": 549,
+      "blob": "d34c35ea108dc58cf90aa400597f109b"
+    },
+    {
+      "group": "Logos",
+      "name": "ia-monogram-white.svg",
+      "type": "image/svg+xml",
+      "size": 560,
+      "blob": "75f439213fb8e798908b268b7568ba21"
+    },
+    {
+      "group": "Brand elements",
+      "name": "ia-asterisk.svg",
+      "type": "image/svg+xml",
+      "size": 400,
+      "blob": "099a11ba9a001cdfb3da0eb02e196e20"
+    },
+    {
+      "group": "Brand elements",
+      "name": "ia-insight-to-action.svg",
+      "type": "image/svg+xml",
+      "size": 4596,
+      "blob": "b06f2be7bd26b4d1d3368838747a346f"
+    },
+    {
+      "group": "Brand elements",
+      "name": "ia-insight-to-action-black.svg",
+      "type": "image/svg+xml",
+      "size": 4604,
+      "blob": "f55616718f2d8e929232717beb1dc984"
+    },
+    {
+      "group": "Brand elements",
+      "name": "ia-blue-field-1.png",
+      "type": "image/png",
+      "size": 341490,
+      "blob": "22feb044e57955f567e0586f26a53f19"
+    },
+    {
+      "group": "Brand elements",
+      "name": "ia-blue-field-2.jpg",
+      "type": "image/jpeg",
+      "size": 100493,
+      "blob": "141e99ac74b7b335471e7b9bab65a68b"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-studio-open-plan.jpg",
+      "type": "image/jpeg",
+      "size": 316767,
+      "blob": "68ffbbd23c554f6a4199a3487fa2ad14"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-studio-team-at-work.jpg",
+      "type": "image/jpeg",
+      "size": 455456,
+      "blob": "9b62e540f89115663964a71c27b3ed73"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-studio-glass-room.jpg",
+      "type": "image/jpeg",
+      "size": 421647,
+      "blob": "1ac38f21d9cb05e83564aa529cdcee41"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-studio-model-shop.jpg",
+      "type": "image/jpeg",
+      "size": 431720,
+      "blob": "20646a20b50e7eb1320a540ac0fc52f0"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-work-synthesis-wall.jpg",
+      "type": "image/jpeg",
+      "size": 93099,
+      "blob": "064914fc863b8174d32d2a6d90f2e237"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-work-side-by-side.jpg",
+      "type": "image/jpeg",
+      "size": 193584,
+      "blob": "5b39ff47c3df2093eebd7de47b9892f3"
+    },
+    {
+      "group": "Photography",
+      "name": "ia-work-research-review.jpg",
+      "type": "image/jpeg",
+      "size": 157115,
+      "blob": "6c0d83468b347ee5970a095ba22a5d75"
+    },
+    {
+      "group": "Icons",
+      "name": "chevron-right-blue.svg",
+      "type": "image/svg+xml",
+      "size": 251,
+      "blob": "0c15712ee037adbd61620e91c1436b6d"
+    },
+    {
+      "group": "Icons",
+      "name": "chevron-right.svg",
+      "type": "image/svg+xml",
+      "size": 241,
+      "blob": "efa9ed3ef08520ece1a94aa245ec794d"
+    },
+    {
+      "group": "Icons",
+      "name": "chevron-left.svg",
+      "type": "image/svg+xml",
+      "size": 241,
+      "blob": "39d28fe8713bc70f200dd97beed95954"
+    },
+    {
+      "group": "Icons",
+      "name": "arrow-up.svg",
+      "type": "image/svg+xml",
+      "size": 262,
+      "blob": "09585b7ba37116579443b8e8d8f5b44f"
+    },
+    {
+      "group": "Icons",
+      "name": "plus.svg",
+      "type": "image/svg+xml",
+      "size": 253,
+      "blob": "9d75a6b98f0bb0de5152e5aa5b92e6bd"
+    },
+    {
+      "group": "Icons",
+      "name": "pause.svg",
+      "type": "image/svg+xml",
+      "size": 311,
+      "blob": "441c060a607925415f0def5c70e1136d"
+    },
+    {
+      "group": "Exports",
+      "name": "ia-collaborative-style-guide-1.0.0.pdf",
+      "type": "application/pdf",
+      "size": 337668,
+      "blob": "b3822e5ca447eb926bbc4af352d94da3"
+    },
+    {
+      "group": "Exports",
+      "name": "DESIGN.md",
+      "type": "text/markdown",
+      "size": 28378,
+      "blob": "fa69c176be6bb2f27b6cd74786a7251b"
+    },
+    {
+      "group": "Exports",
+      "name": "light.tokens.json",
+      "type": "application/json",
+      "size": 22357,
+      "blob": "41e8b7ecbb7d222c38f1e35721ed2f1f"
+    },
+    {
+      "group": "Exports",
+      "name": "dark.tokens.json",
+      "type": "application/json",
+      "size": 24997,
+      "blob": "4fb824d70f95228357ad161c9076624a"
+    },
+    {
+      "group": "Exports",
+      "name": "base.tokens.json",
+      "type": "application/json",
+      "size": 51980,
+      "blob": "9dd1a6ec6a9c7e3f9f10c8749c4a7391"
+    },
+    {
+      "group": "Exports",
+      "name": "ia-collaborative-design-system.resolver.json",
+      "type": "application/json",
+      "size": 732,
+      "blob": "8500d70bee1526c64b7e7899b1bd1e8e"
+    },
+    {
+      "group": "Exports",
+      "name": "shadcn-ia-collaborative-design-system.json",
+      "type": "application/json",
+      "size": 50731,
+      "blob": "6f274d0c5132dafb46660fc6cf4c609e"
+    }
+  ]
+}

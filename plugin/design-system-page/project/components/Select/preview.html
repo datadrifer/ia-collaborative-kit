@@ -1,0 +1,11 @@
+<!-- @dsCard group="Forms" height=300 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h('div',{className:'grid max-w-sm gap-inset-xs'}, h(Label,{className:'text-micro uppercase text-ink-eyebrow'},'Service'), h(Select,{defaultValue:'ai',open:true,onOpenChange:function(){}}, h(SelectTrigger,{className:'w-full'}, h(SelectValue,null)), h(SelectContent,null, h(SelectGroup,null, h(SelectLabel,null,'We deliver'), h(SelectItem,{value:'bi'},'Behavioral Insight & Intent Intelligence'), h(SelectItem,{value:'ai'},'Enterprise Data & AI Strategy'), h(SelectItem,{value:'xp'},'Experience and Product'), h(SelectItem,{value:'om'},'Operating Model Transformation'))))))
+  }
+})()
+</script>

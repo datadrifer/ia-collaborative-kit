@@ -1,0 +1,24 @@
+{
+  "name": "ia-collaborative",
+  "owner": {
+    "name": "IA Collaborative"
+  },
+  "metadata": {
+    "description": "IA Collaborative's design system for Claude: publishes IA's Design System page, and sets up code projects with a gate that keeps Claude on brand.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ia-design",
+      "source": "./plugin",
+      "description": "IA Collaborative's design system for Claude: publishes IA's Design System page, and sets up code projects with a gate that keeps Claude on brand.",
+      "version": "1.0.0",
+      "category": "design",
+      "keywords": [
+        "design-system",
+        "brand",
+        "ia-collaborative"
+      ]
+    }
+  ]
+}

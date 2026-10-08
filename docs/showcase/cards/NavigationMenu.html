@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/card.css">
+<link rel="stylesheet" href="../lib/bundle.css">
+<script>
+  // Open overlays focus themselves; without this the showcase page scrolls to the card.
+  const focus = HTMLElement.prototype.focus;
+  HTMLElement.prototype.focus = function (options) { focus.call(this, { ...options, preventScroll: true }); };
+  // Inside the showcase, a card never scrolls the page around it (an open Select scrolls its item into view).
+  if (window !== window.parent) Element.prototype.scrollIntoView = function () {};
+</script>
+<script src="../lib/react.production.min.js"></script>
+<script src="../lib/react-dom.production.min.js"></script>
+<script src="../lib/bundle.js"></script>
+<title>NavigationMenu</title>
+</head>
+<body>
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(NavigationMenu,{defaultValue:'services',viewport:false}, h(NavigationMenuList,null, h(NavigationMenuItem,{value:'services'}, h(NavigationMenuTrigger,null,'Services'), h(NavigationMenuContent,null, h('ul',{className:'grid w-96 gap-inset-xs p-inset-sm'}, ...['Behavioral Insight & Intent Intelligence','Enterprise Data & AI Strategy','Experience and Product','Operating Model Transformation'].map((t,i)=>h('li',{key:t}, h(NavigationMenuLink,{href:'#'}, h('span',{className:'text-caption text-muted-foreground'},'0'+(i+1)+'.'), ' ', t)))))), h(NavigationMenuItem,null, h(NavigationMenuLink,{href:'#',className:navigationMenuTriggerStyle()},'Insights')))))
+  }
+})()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!-- @dsCard group="Navigation" height=280 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(NavigationMenu,{defaultValue:'services',viewport:false}, h(NavigationMenuList,null, h(NavigationMenuItem,{value:'services'}, h(NavigationMenuTrigger,null,'Services'), h(NavigationMenuContent,null, h('ul',{className:'grid w-96 gap-inset-xs p-inset-sm'}, ...['Behavioral Insight & Intent Intelligence','Enterprise Data & AI Strategy','Experience and Product','Operating Model Transformation'].map((t,i)=>h('li',{key:t}, h(NavigationMenuLink,{href:'#'}, h('span',{className:'text-caption text-muted-foreground'},'0'+(i+1)+'.'), ' ', t)))))), h(NavigationMenuItem,null, h(NavigationMenuLink,{href:'#',className:navigationMenuTriggerStyle()},'Insights')))))
+  }
+})()
+</script>

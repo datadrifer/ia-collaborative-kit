@@ -1,0 +1,11 @@
+<!-- @dsCard group="Overlays" height=150 -->
+<div id="root" class="p-inset-lg font-sans text-foreground"></div>
+<script>
+(function () {
+  var h = React.createElement
+  var ns = window.IACollaborative
+  with (ns) {
+    ReactDOM.createRoot(document.getElementById('root')).render(h(function Demo(){ React.useEffect(function(){ var t=setTimeout(function(){ toast("Message sent. We'll get back to you within two business days.") },50); return function(){clearTimeout(t)} },[]); return h(Toaster,{position:'top-center',expand:true}) },null))
+  }
+})()
+</script>
