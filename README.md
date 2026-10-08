@@ -10,18 +10,26 @@ IA's colours, type, logo, photography and layout rules, packaged for Claude. Onc
 
 **01. Get the kit.** You have it.
 
-**02. Ross Gehm runs the setup.** In Claude Code (the Code tab of the Claude desktop app, or the terminal), signed in to IA's Claude account, open this folder and paste one line at a time:
+**02. Ross Gehm runs the setup.** First, in Terminal, once. Go to this folder: type `cd` and a space, drag this folder onto the window, and press Return. Keep the folder where it is afterwards. Then paste one line at a time:
 
 ```
-/plugin marketplace add ./
-/plugin install ia-design@ia-collaborative
+claude plugin marketplace add ./
+claude plugin install ia-design@ia-collaborative
 ```
 
-Restart Claude Code in this folder, then paste:
+If Terminal says `command not found: claude`, install Claude Code, open a new Terminal window, and run the two lines again:
+
+```
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+Then, in the Claude desktop app, signed in to IA's Claude account: open the Code tab, start a new session in this folder, and paste:
 
 ```
 /ia-design:create-page
 ```
+
+If it does not come up when you type `/`, quit and reopen the app, then start a new session. (The `/plugin` command does not work in the desktop app; the Terminal lines above do the same job.)
 
 Claude creates the **IA Collaborative** Design System page in IA's Claude account and gives you its link. Open it and check that it shows IA's logo, colours and components.
 
@@ -39,6 +47,28 @@ Claude creates the **IA Collaborative** Design System page in IA's Claude accoun
 | `plugin/` | The Claude Code plugin: `/ia-design:create-page` (the Design System page), `/ia-design:sync` (brings this kit up to the page's version) and `/ia-design:setup` (code projects, with the gate). |
 | `components/` | IA's sized shadcn/ui components for React projects. |
 | `LICENSES.md` | Who owns which file. |
+
+## For developers
+
+Add the plugin from GitHub, so new versions reach you. In Terminal, one line at a time (git must be installed):
+
+```
+claude plugin marketplace add datadrifer/ia-collaborative-kit
+claude plugin install ia-design@ia-collaborative
+```
+
+Then start a new Claude Code session in each project and run `/ia-design:setup` once. It copies the system in and switches on the gate. When the owner publishes a new version:
+
+```
+claude plugin marketplace update ia-collaborative
+claude plugin update ia-design@ia-collaborative
+```
+
+Then start a new session in each project and run `/ia-design:setup` again.
+
+## The kit's repository
+
+The kit lives at https://github.com/datadrifer/ia-collaborative-kit. Publishing a new version to developers means pushing to it, so the owner needs a clone of it (`git clone https://github.com/datadrifer/ia-collaborative-kit`) and push access. The repository should sit in IA's own GitHub organisation: ask for it to be transferred there (GitHub keeps every old link working) before the first update.
 
 ## Fonts
 

@@ -2078,26 +2078,34 @@ html.viewer-open { overflow: hidden; }
             </div>
           </div>
           <div class="step-body">
-            <p class="step-note">Open the kit folder in Claude Code (the Code tab of the Claude desktop app, or the terminal), signed in to IA's Claude account. Paste each line on its own:</p>
+            <p class="step-note"><strong>First, in Terminal, once.</strong> Go to the kit folder: type <strong>cd</strong> and a space, drag the kit folder onto the window, and press Return. Keep the folder where it is afterwards. Then paste each line on its own:</p>
             <div class="machine">
               <div class="machine-line">
-                <code id="cmd-add"><span class="machine-prefix">&gt;</span>/plugin marketplace add ./</code>
+                <code id="cmd-add"><span class="machine-prefix">&gt;</span>claude plugin marketplace add ./</code>
                 <button class="copy" type="button" data-copy="cmd-add"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
               </div>
             </div>
             <div class="machine">
               <div class="machine-line">
-                <code id="cmd-install"><span class="machine-prefix">&gt;</span>/plugin install ia-design@ia-collaborative</code>
+                <code id="cmd-install"><span class="machine-prefix">&gt;</span>claude plugin install ia-design@ia-collaborative</code>
                 <button class="copy" type="button" data-copy="cmd-install"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
               </div>
             </div>
-            <p class="step-note">Restart Claude Code in the same folder, then:</p>
+            <p class="step-note">If Terminal says <strong>command not found: claude</strong>, install Claude Code with this line, open a new Terminal window, and run the two lines again:</p>
+            <div class="machine">
+              <div class="machine-line">
+                <code id="cmd-cli"><span class="machine-prefix">&gt;</span>curl -fsSL https://claude.ai/install.sh | bash</code>
+                <button class="copy" type="button" data-copy="cmd-cli"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
+              </div>
+            </div>
+            <p class="step-note"><strong>Then, in the Claude desktop app</strong>, signed in to IA's Claude account: open the Code tab, start a new session in the kit folder, and paste:</p>
             <div class="machine">
               <div class="machine-line">
                 <code id="cmd-create"><span class="machine-prefix">&gt;</span>/ia-design:create-page</code>
                 <button class="copy" type="button" data-copy="cmd-create"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
               </div>
             </div>
+            <p class="step-note">If it does not come up when you type /, quit and reopen the app, then start a new session.</p>
             <p class="step-note">Claude creates the <strong>IA Collaborative</strong> Design System page in IA's Claude account and gives you its link. Open it and check that it shows IA's logo, colours and components. Keep the link: the owner uses it for every update.</p>
           </div>
         </li>
@@ -2233,20 +2241,20 @@ html.viewer-open { overflow: hidden; }
                       <button class="copy" type="button" data-copy="cmd-sync"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
                     </div>
                   </div>
-                  <p class="step-note">Claude reads the page, brings the kit up to the same version (values, brand files, brand book and version number), shows what changed, and offers to commit, push and tag it. Developers then paste each line on its own:</p>
+                  <p class="step-note">Claude reads the page, brings the kit up to the same version (values, brand files, brand book and version number), shows what changed, and offers to commit, push and tag it. Developers then paste each line on its own in Terminal:</p>
                   <div class="machine">
                     <div class="machine-line">
-                      <code id="cmd-mkt"><span class="machine-prefix">&gt;</span>/plugin marketplace update ia-collaborative</code>
+                      <code id="cmd-mkt"><span class="machine-prefix">&gt;</span>claude plugin marketplace update ia-collaborative</code>
                       <button class="copy" type="button" data-copy="cmd-mkt"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
                     </div>
                   </div>
                   <div class="machine">
                     <div class="machine-line">
-                      <code id="cmd-upd"><span class="machine-prefix">&gt;</span>/plugin update ia-design@ia-collaborative</code>
+                      <code id="cmd-upd"><span class="machine-prefix">&gt;</span>claude plugin update ia-design@ia-collaborative</code>
                       <button class="copy" type="button" data-copy="cmd-upd"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
                     </div>
                   </div>
-                  <p class="step-note">Restart Claude Code, then in each project:</p>
+                  <p class="step-note">Then they start a new Claude Code session in each project and run:</p>
                   <div class="machine">
                     <div class="machine-line">
                       <code id="cmd-resetup"><span class="machine-prefix">&gt;</span>/ia-design:setup</code>
@@ -2372,7 +2380,7 @@ html.viewer-open { overflow: hidden; }
             <div class="machine machine-prompt"><div class="machine-line"><q id="ask-code">Build a capabilities page at /capabilities from content/capabilities.md. Follow the IA Collaborative design system skill, use its tokens only, and run the gate check on every file before you finish.</q><button class="copy" type="button" data-copy="ask-code"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button></div></div>
           </div>
           <div class="tool-notes">
-            <div><p class="note-label">Before you start</p><p class="note-text">Add the plugin the same way Ross does during setup, then run <strong>/ia-design:setup</strong> once in the project.</p></div>
+            <div><p class="note-label">Before you start</p><p class="note-text">In Terminal, once: <strong>claude plugin marketplace add datadrifer/ia-collaborative-kit</strong>, then <strong>claude plugin install ia-design@ia-collaborative</strong>. Then start a new Claude Code session in the project and run <strong>/ia-design:setup</strong> once. Added from GitHub, new versions reach you with the two update lines under Publishing a New Version.</p></div>
             <div><p class="note-label">Why it works</p><p class="note-text">The skill gives Claude the system, and the gate refuses anything off-system, so the page cannot drift.</p></div>
           </div>
         </div>

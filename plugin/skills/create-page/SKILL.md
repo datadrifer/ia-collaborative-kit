@@ -1,6 +1,8 @@
 ---
+name: create-page
 description: Create the IA Collaborative Design System page in this Claude account from the kit (once, at setup; or to rebuild a lost page)
 allowed-tools: Bash, Read, Write, Artifact
+disable-model-invocation: true
 ---
 
 Create IA's Design System page in the Claude account this session is signed in to, from the kit's copy of it. Claude Slides and Claude Design read that page. Keep every message short and plain: the person may not be technical.

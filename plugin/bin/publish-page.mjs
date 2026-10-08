@@ -100,6 +100,8 @@ function finish(work) {
   const valid = existing && existing.v === 3 && (existing.createdOnFiles || existing.convertedFrom)
   const index = {
     ...(valid ? existing : ours),
+    // A new page is created now; a rebuilt page keeps its own marker
+    ...(valid ? {} : { createdOnFiles: { v: 1, at: new Date().toISOString().replace(/\.\d{3}Z$/, 'Z') } }),
     title: flag('title') ?? ours.title,
     namespace: ours.namespace,
     libraries: ours.libraries,

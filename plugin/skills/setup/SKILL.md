@@ -1,5 +1,7 @@
 ---
+name: setup
 description: Set up the IA Collaborative design system in this project (copies the system, switches on the gate, notes it in CLAUDE.md)
+disable-model-invocation: true
 ---
 
 Run this command from the project root and show the person its output:

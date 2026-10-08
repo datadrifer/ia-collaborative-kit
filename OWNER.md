@@ -108,22 +108,22 @@ Nothing more to do. The page is live the moment Claude publishes it: new decks, 
 
 Code projects use a copy of the system from this kit. Bring the kit up to the page's version, then share it.
 
-1. In Claude Code, signed in to IA's account, open the kit folder and run:
+1. In Claude Code, signed in to IA's account, open your clone of the kit's repository (see The kit's repository in the README) and run:
 
    ```
    /ia-design:sync
    ```
 
    Claude reads the page and brings the kit up to the same version: the values, the brand files, the brand book and the version number. It shows what changed. If the page changed without a new version number, it stops and says so.
-2. When Claude offers, let it commit, push and tag the new version (for example `v1.0.1`).
-3. Developers then run, in Claude Code, one line at a time:
+2. When Claude offers, let it commit, push and tag the new version (for example `v1.0.1`). Developers only get the version once it is pushed.
+3. Developers, who added the plugin from GitHub (README, For developers), then run in Terminal, one line at a time:
 
    ```
-   /plugin marketplace update ia-collaborative
-   /plugin update ia-design@ia-collaborative
+   claude plugin marketplace update ia-collaborative
+   claude plugin update ia-design@ia-collaborative
    ```
 
-   then restart Claude Code and run `/ia-design:setup` in each project.
+   then start a new Claude Code session in each project and run `/ia-design:setup`.
 
 ### Tell people
 

@@ -129,7 +129,7 @@ function normalise(text) {
 }
 
 /** The page's values in one stylesheet: returns the changes, and writes them only when `write`. */
-function syncStylesheet(file, page, write) {
+function syncStylesheet(file, page, write, only) {
   if (!existsSync(file)) return []
   let css = readFileSync(file, 'utf8')
   const changes = []
@@ -143,6 +143,7 @@ function syncStylesheet(file, page, write) {
     // Edit from the end, so earlier indexes stay valid
     const edits = []
     for (const [name, pageValue] of values) {
+      if (only && !only.has(`${mode} ${name}`)) continue
       const def = defs.get(name)
       if (!def) continue
       if (resolveCode(def.value) === resolvePage(pageValue)) continue
@@ -156,7 +157,7 @@ function syncStylesheet(file, page, write) {
   }
   // Tokens the page added that the code does not have yet: appended to the base block
   const known = definitions(css, regions(css).base)
-  const added = [...page.light].filter(([name]) => !known.has(name))
+  const added = [...page.light].filter(([name]) => !known.has(name) && (!only || only.has(`light ${name}`)))
   if (added.length) {
     const lines = added.map(([name, value]) => `  ${name}: ${asCss(value)};`).join('\n')
     const at = regions(css).base[1]
@@ -203,6 +204,9 @@ function syncBrandFiles(copy, index, write) {
       if (!saved) continue
       const from = join(copy, 'blobs', saved)
       const to = join(SKILL, 'assets', record.name)
+      // The page re-saves files (an SVG's spacing changes), so compare with the copy last synced
+      const last = join(SNAPSHOT, 'assets', group, record.name)
+      if (existsSync(last) && sha256(last) === sha256(from)) continue
       if (existsSync(to) && sha256(to) === sha256(from)) continue
       changes.push({ file: `assets/${record.name}`, change: existsSync(to) ? 'updated' : 'added' })
       if (!write) continue
@@ -221,7 +225,8 @@ function syncBrandBook(copy, write) {
   const readme = join(copy, 'project', 'README.md')
   if (!existsSync(readme)) return false
   const target = join(SKILL, 'brand-book.md')
-  const before = existsSync(target) ? readFileSync(target, 'utf8') : ''
+  const last = join(SNAPSHOT, 'project', 'README.md')
+  const before = existsSync(target) ? readFileSync(target, 'utf8') : existsSync(last) ? readFileSync(last, 'utf8') : ''
   const after = readFileSync(readme, 'utf8')
   if (!write) return before !== after
   writeFileSync(target, after)
@@ -276,6 +281,26 @@ function changelog(version, changes) {
   writeFileSync(path, [title, entry, ...rest].join('\n').replace(/\n{3,}/g, '\n\n'))
 }
 
+/**
+ * The token values that differ from the copy of the page taken at the last sync, as
+ * "light --name" / "dark --name". The code can hold values the page never had and the
+ * other way round (the Machine view label is page-only), so the last copy is the baseline.
+ * No copy yet: null, and every value is compared with the code.
+ */
+function changedSinceLastSync(page) {
+  const lastTokens = join(SNAPSHOT, 'project', 'tokens.json')
+  if (!existsSync(lastTokens)) return null
+  const last = pageValues(readJson(lastTokens))
+  const only = new Set()
+  for (const mode of ['light', 'dark']) {
+    for (const [name, value] of page[mode]) {
+      const before = last[mode].get(name)
+      if (before === undefined || normalise(String(before)) !== normalise(String(value))) only.add(`${mode} ${name}`)
+    }
+  }
+  return only
+}
+
 // ---- Run ------------------------------------------------------------------------------------
 
 function main() {
@@ -295,9 +320,10 @@ function main() {
   if (newer(kitVersion, pageVersion)) return fail(`the kit (${kitVersion}) is newer than the page (${pageVersion}). Nothing to sync.`)
 
   const page = pageValues(tokens)
+  const only = changedSinceLastSync(page)
   const stylesheets = [join(SKILL, 'root.css'), join(SKILL, 'substrate.css')]
   const plan = (write) => ({
-    tokens: stylesheets.flatMap((file) => syncStylesheet(file, page, write)),
+    tokens: stylesheets.flatMap((file) => syncStylesheet(file, page, write, only)),
     files: syncBrandFiles(copy, index, write),
     brandBook: syncBrandBook(copy, write),
   })
