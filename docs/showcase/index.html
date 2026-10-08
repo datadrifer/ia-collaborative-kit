@@ -1969,6 +1969,60 @@ html.viewer-open { overflow: hidden; }
   white-space: nowrap;
 }
 
+/* Book a call: a small window with the ways to email */
+.call-dialog {
+  width: min(calc(100% - var(--sp-stack-lg)), var(--ms-sm));
+  max-width: none;
+  margin: auto;
+  padding: 0;
+  border: var(--stroke-hairline) solid var(--border);
+  border-radius: var(--r-containers);
+  background: var(--surface);
+  color: var(--foreground);
+  box-shadow: var(--sh-lg);
+}
+.call-dialog::backdrop { background: var(--inverse-surface); opacity: 0.4; }
+.call-dialog-body { display: flex; flex-direction: column; gap: var(--sp-stack-sm); padding: var(--sp-region); }
+.call-dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sp-inset-lg); }
+.call-dialog-title {
+  margin: 0;
+  font-size: var(--text-h3);
+  line-height: var(--text-h3--line-height);
+  letter-spacing: var(--text-h3--letter-spacing);
+  font-weight: var(--text-h3--font-weight);
+  color: var(--ink-heading);
+}
+.call-dialog-close { flex: none; }
+.call-dialog-close svg { width: var(--text-body); height: var(--text-body); }
+.call-dialog-text { margin: 0; font-size: var(--text-body); line-height: var(--text-lead--line-height); color: var(--text-secondary); }
+.call-options { list-style: none; margin: 0; padding: 0; border-bottom: var(--stroke-hairline) solid var(--border); }
+.call-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-inset-md);
+  padding-block: var(--sp-inset-md);
+  border-top: var(--stroke-hairline) solid var(--border);
+  color: var(--interactive);
+  font-size: var(--text-body);
+  font-weight: var(--weight-eyebrow);
+  text-decoration: none;
+}
+.call-option:hover { color: var(--foreground); }
+.call-option:focus-visible { outline: var(--stroke-hairline) solid var(--ring); outline-offset: var(--sp-hairline); border-radius: var(--r-sm); }
+.call-option svg { width: var(--text-body); height: var(--text-body); transition: transform var(--duration-quick) var(--ease-standard); }
+.call-address { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-inset-md); min-width: 0; }
+.call-address-text { min-width: 0; font-size: var(--text-small); color: var(--palette-gray-500); overflow-wrap: anywhere; }
+.call-dialog .copy { border: var(--stroke-hairline) solid var(--input); }
+@media (prefers-reduced-motion: no-preference) {
+  .call-option:hover svg { transform: translateX(var(--sp-optical)); }
+  .call-dialog[open] { animation: viewer-in var(--duration-standard) var(--ease-enter) both; }
+  .call-dialog[open]::backdrop { animation: fade-in var(--duration-standard) var(--ease-enter) both; }
+}
+@media (max-width: 48rem) {
+  .call-dialog-body { padding: var(--sp-inset-lg); }
+}
+
 /* The showcase: the Design System page's content in IA's own clothes.
    Extends page.css. Rows put the title beside the detail, as the guide does; token groups
    open with a small bold head; everything sits on IA's white with hairlines. Tokens only. */

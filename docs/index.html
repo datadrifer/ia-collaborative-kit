@@ -1969,6 +1969,60 @@ html.viewer-open { overflow: hidden; }
   white-space: nowrap;
 }
 
+/* Book a call: a small window with the ways to email */
+.call-dialog {
+  width: min(calc(100% - var(--sp-stack-lg)), var(--ms-sm));
+  max-width: none;
+  margin: auto;
+  padding: 0;
+  border: var(--stroke-hairline) solid var(--border);
+  border-radius: var(--r-containers);
+  background: var(--surface);
+  color: var(--foreground);
+  box-shadow: var(--sh-lg);
+}
+.call-dialog::backdrop { background: var(--inverse-surface); opacity: 0.4; }
+.call-dialog-body { display: flex; flex-direction: column; gap: var(--sp-stack-sm); padding: var(--sp-region); }
+.call-dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--sp-inset-lg); }
+.call-dialog-title {
+  margin: 0;
+  font-size: var(--text-h3);
+  line-height: var(--text-h3--line-height);
+  letter-spacing: var(--text-h3--letter-spacing);
+  font-weight: var(--text-h3--font-weight);
+  color: var(--ink-heading);
+}
+.call-dialog-close { flex: none; }
+.call-dialog-close svg { width: var(--text-body); height: var(--text-body); }
+.call-dialog-text { margin: 0; font-size: var(--text-body); line-height: var(--text-lead--line-height); color: var(--text-secondary); }
+.call-options { list-style: none; margin: 0; padding: 0; border-bottom: var(--stroke-hairline) solid var(--border); }
+.call-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-inset-md);
+  padding-block: var(--sp-inset-md);
+  border-top: var(--stroke-hairline) solid var(--border);
+  color: var(--interactive);
+  font-size: var(--text-body);
+  font-weight: var(--weight-eyebrow);
+  text-decoration: none;
+}
+.call-option:hover { color: var(--foreground); }
+.call-option:focus-visible { outline: var(--stroke-hairline) solid var(--ring); outline-offset: var(--sp-hairline); border-radius: var(--r-sm); }
+.call-option svg { width: var(--text-body); height: var(--text-body); transition: transform var(--duration-quick) var(--ease-standard); }
+.call-address { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-inset-md); min-width: 0; }
+.call-address-text { min-width: 0; font-size: var(--text-small); color: var(--palette-gray-500); overflow-wrap: anywhere; }
+.call-dialog .copy { border: var(--stroke-hairline) solid var(--input); }
+@media (prefers-reduced-motion: no-preference) {
+  .call-option:hover svg { transform: translateX(var(--sp-optical)); }
+  .call-dialog[open] { animation: viewer-in var(--duration-standard) var(--ease-enter) both; }
+  .call-dialog[open]::backdrop { animation: fade-in var(--duration-standard) var(--ease-enter) both; }
+}
+@media (max-width: 48rem) {
+  .call-dialog-body { padding: var(--sp-inset-lg); }
+}
+
 :root { color-scheme: light; }
 </style>
 
@@ -2504,7 +2558,7 @@ html.viewer-open { overflow: hidden; }
           <p class="cta-text">Book a call with Ahmed and talk it through.</p>
         </div>
         <div class="cta-actions">
-          <a class="cta-button" href="mailto:ahmed_baky@mde.harvard.edu?subject=IA%20Collaborative%20Design%20System%3A%20booking%20a%20call">Book a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a class="cta-button" href="mailto:ahmed_baky@mde.harvard.edu?subject=IA%20Collaborative%20Design%20System%3A%20booking%20a%20call" data-call>Book a call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </div>
       </section>
     </div>
@@ -2519,6 +2573,25 @@ html.viewer-open { overflow: hidden; }
 
   </main>
 </div>
+
+<dialog class="call-dialog" id="call-dialog" aria-labelledby="call-dialog-title">
+  <div class="call-dialog-body">
+    <div class="call-dialog-head">
+      <h2 class="call-dialog-title" id="call-dialog-title">Book a Call With Ahmed</h2>
+      <button class="circle-button call-dialog-close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    </div>
+    <p class="call-dialog-text">Send Ahmed an email with a few times that suit you. Choose where you write email:</p>
+    <ul class="call-options">
+      <li><a class="call-option" href="https://outlook.office.com/mail/deeplink/compose?to=ahmed_baky%40mde.harvard.edu&amp;subject=IA%20Collaborative%20Design%20System%3A%20booking%20a%20call" target="_blank" rel="noopener">Outlook on the web <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+      <li><a class="call-option" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ahmed_baky%40mde.harvard.edu&amp;su=IA%20Collaborative%20Design%20System%3A%20booking%20a%20call" target="_blank" rel="noopener">Gmail <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+      <li><a class="call-option" href="mailto:ahmed_baky@mde.harvard.edu?subject=IA%20Collaborative%20Design%20System%3A%20booking%20a%20call">Your email app <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+    </ul>
+    <div class="call-address">
+      <span class="call-address-text" id="call-address">ahmed_baky@mde.harvard.edu</span>
+      <button class="copy" type="button" data-copy="call-address"><svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span class="copy-label">Copy</span></button>
+    </div>
+  </div>
+</dialog>
 
 <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
   <div class="viewer-scrim"></div>
@@ -2628,6 +2701,20 @@ html.viewer-open { overflow: hidden; }
     });
   });
 
+  // Book a call: a window with the ways to email, since an email link does nothing on a
+  // computer with no email app set up
+  const callDialog = document.getElementById('call-dialog');
+  document.querySelectorAll('[data-call]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (!callDialog.showModal) return;
+      event.preventDefault();
+      callDialog.showModal();
+    });
+  });
+  callDialog.querySelector('.call-dialog-close').addEventListener('click', () => callDialog.close());
+  callDialog.addEventListener('click', (event) => { if (event.target === callDialog) callDialog.close(); });
+  callDialog.querySelectorAll('.call-option').forEach((a) => a.addEventListener('click', () => callDialog.close()));
+
   // Copy buttons: copy the line or the request; fall back to selecting it.
   document.addEventListener('click', async (event) => {
     const button = event.target.closest('[data-copy]');
@@ -2645,6 +2732,17 @@ html.viewer-open { overflow: hidden; }
       await navigator.clipboard.writeText(text);
       done();
     } catch {
+      // Where the clipboard is refused, the older copy command often still works
+      const field = document.createElement('textarea');
+      field.value = text;
+      field.setAttribute('readonly', '');
+      field.style.position = 'fixed';
+      field.style.opacity = '0';
+      (button.closest('dialog') ?? document.body).append(field);
+      field.select();
+      const copied = document.execCommand('copy');
+      field.remove();
+      if (copied) { done(); return; }
       const range = document.createRange();
       range.selectNodeContents(source);
       const selection = window.getSelection();
